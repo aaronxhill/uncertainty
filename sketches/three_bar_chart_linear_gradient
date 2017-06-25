@@ -1,0 +1,22 @@
+function setup() {
+  createCanvas(320, 320);
+  noLoop();
+}
+
+function draw() {
+    line(40.6, 280, 280, 280);
+    var b1 = color(221, 221, 221);
+    var b2 = color(109, 109, 109);
+    setGradient(69, 186, 40, 94, b1, b2);
+    setGradient(140, 39, 40, 241, b1, b2);
+    setGradient(210, 114, 40, 166, b1, b2);
+  }
+function setGradient(x, y, w, h, b1, b2) {
+    noFill();
+    for (i = y; i <= y+h; i++){
+      var inter = map(i, y, y+h, 0.0, 1.0);
+      var c = lerpColor(b1, b2, inter);
+      stroke(c);
+      line(x, i, x+w, i);
+    }
+  }
