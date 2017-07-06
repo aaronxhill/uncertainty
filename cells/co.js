@@ -17,6 +17,10 @@ var co = function(p) {
 
         p.fill(90);
         p.rect(210, 77, 40, 166);
+        
+        p.fill(50);
+        p.text('orientation', 20, 300);
+        p.noLoop();
     }
 }
 

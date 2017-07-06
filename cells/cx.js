@@ -32,6 +32,10 @@ var cx = function (p) {
         p.vertex(251.127413583046, 279.705128205125);
         p.vertex(251.127413583046, 114.314097460106);
         p.endShape();
+        
+        p.fill(50);
+        p.text('Bertin', 20, 300);
+        p.noLoop();
     }
 }
 

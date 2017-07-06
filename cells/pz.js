@@ -28,6 +28,10 @@ var pz = function(p) {
         for (var i = 0; i < x3.length; i++) {
             p.ellipse(x3[i], y3[i], 10, 10);
         }
+        
+        p.fill(50);
+        p.text('size', 20, 300);
+        p.noLoop();
     }
 }
 

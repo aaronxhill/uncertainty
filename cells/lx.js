@@ -3,6 +3,7 @@ var lx = function (p) {
     p.setup = function () {
         p.createCanvas(320, 320);
     };
+    
     p.draw = function() {
         p.background(230);
         p.noFill();
@@ -207,6 +208,11 @@ var lx = function (p) {
             p.vertex(288.748688185202, 215.068511624386);
             p.vertex(303.512055899548, 239.503069616012);
         p.endShape();
+        
+        // p.noFill();
+        p.fill(50);
+        p.text('Bertin', 20, 300);
+        p.noLoop();
     }
 }
 

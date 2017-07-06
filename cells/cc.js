@@ -16,6 +16,10 @@ var cc = function(p) {
 
         p.fill(255, 110, 111);
         p.rect(210, 114, 40, 166);
+        
+        p.fill(50);
+        p.text('color', 20, 300);
+        p.noLoop();
     }
 
 }

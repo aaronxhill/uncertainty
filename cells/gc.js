@@ -427,6 +427,10 @@ var gc = function(p) {
         p.vertex(15.3308750885662, 303.06);
         p.vertex(15.3308750885662, 18.2626692645499);
         p.endShape();
+        
+        p.fill(50);
+        p.text('color', 20, 300);
+        p.noLoop();
     }
 }
 

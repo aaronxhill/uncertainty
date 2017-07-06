@@ -40,6 +40,10 @@ var gs = function(p) {
             p.vertex(ny_xcoor[i], ny_ycoor[i]);
             p.endShape();
         }
+        
+        p.fill(50);
+        p.text('shape', 20, 300);
+        p.noLoop();
     }
 }
 

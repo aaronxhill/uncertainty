@@ -13,6 +13,9 @@ var ct = function(p) {
         setGradient(69, 186, 40, 94, b1, b2);
         setGradient(140, 39, 40, 241, b1, b2);
         setGradient(210, 114, 40, 166, b1, b2);
+        p.fill(50);
+        p.text('texture', 20, 300);
+        p.noLoop();
     }
 
     function setGradient(x, y, w, h, b1, b2) {

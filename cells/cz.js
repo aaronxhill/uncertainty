@@ -17,6 +17,10 @@ var cz = function(p) {
 
         p.fill(90);
         p.rect(210, 114, 40, 166);
+        
+        p.fill(50);
+        p.text('size', 20, 300);
+        p.noLoop();
     }
 }
 

@@ -27,7 +27,10 @@ var ls = function(p) {
         for (var i = 0; i < x3.length; i = i + 3) {
             p.bezier(x3[i], y3[i], x3[i + 1], y3[i + 1], x3[i + 2], y3[i + 2], x3[i + 3], y3[i + 3], 1);
         }
-
+        
+        p.fill(50);
+        p.text('shape', 20, 300);
+        p.noLoop();
     }
 }
 

@@ -30,6 +30,10 @@ var po = function(p) {
             p.ellipse(x3[i], y3[i], 3, 3);
             p.line(x3[i], y3[i], x3[i], y3[i] - 7);
         }
+        
+        p.fill(50);
+        p.text('orientation', 20, 300);
+        p.noLoop();
     }
 }
 

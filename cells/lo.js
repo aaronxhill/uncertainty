@@ -84,6 +84,9 @@ var lo = function(p) {
         for (var i = 0; i < x3.length; i++) {
             p.ellipse(x3[i], y3[i], 2, 2);
         }
+        p.fill(50);
+        p.text('orientation', 20, 300);
+        p.noLoop();
     }
 }
 

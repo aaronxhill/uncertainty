@@ -44,6 +44,10 @@ var ptb = function(p) {
             p.fill(150);
             p.strokeWeight(.25);
         }
+        
+        p.fill(50);
+        p.text('texture (Bertin)', 20, 300);
+        p.noLoop();
     }
 }
 

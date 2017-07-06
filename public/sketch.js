@@ -30,6 +30,10 @@ var po = function(p) {
             p.ellipse(x3[i], y3[i], 3, 3);
             p.line(x3[i], y3[i], x3[i], y3[i] - 7);
         }
+        
+        p.fill(50);
+        p.text('orientation', 20, 300);
+        p.noLoop();
     }
 }
 
@@ -81,6 +85,10 @@ var ptb = function(p) {
             p.fill(150);
             p.strokeWeight(.25);
         }
+        
+        p.fill(50);
+        p.text('texture (Bertin)', 20, 300);
+        p.noLoop();
     }
 }
 
@@ -111,8 +119,11 @@ var pt = function(p) {
             drawGradient(x1[i], y1[i]);
             drawGradient2(x2[i], y2[i]);
             drawGradient3(x3[i], y3[i]);
-
         }
+        
+        p.fill(50);
+        p.text('texture', 20, 300);
+        p.noLoop();
     }
 
     function drawGradient(x, y) {
@@ -267,6 +278,10 @@ var ps = function (p) {
         p.triangle(292, 159, 290.5, 161.5, 293.5, 161.5);
         p.triangle(289, 172, 287.5, 174.5, 290.5, 174.5);
         p.triangle(297, 183, 295.5, 185.5, 298.5, 185.5);
+        
+        p.fill(50);
+        p.text('shape', 20, 300);
+        p.noLoop();
     };
 };
 
@@ -302,6 +317,10 @@ var pz = function(p) {
         for (var i = 0; i < x3.length; i++) {
             p.ellipse(x3[i], y3[i], 10, 10);
         }
+        
+        p.fill(50);
+        p.text('size', 20, 300);
+        p.noLoop();
     }
 }
 
@@ -439,6 +458,10 @@ var pc = function(p) {
         p.ellipse(292, 159, 6, 6);
         p.ellipse(289, 172, 6, 6);
         p.ellipse(297, 183, 6, 6);
+        
+        p.fill(50);
+        p.text('color', 20, 300);
+        p.noLoop();
     }
 }
 
@@ -449,6 +472,7 @@ var lx = function (p) {
     p.setup = function () {
         p.createCanvas(320, 320);
     };
+    
     p.draw = function() {
         p.background(230);
         p.noFill();
@@ -653,6 +677,11 @@ var lx = function (p) {
             p.vertex(288.748688185202, 215.068511624386);
             p.vertex(303.512055899548, 239.503069616012);
         p.endShape();
+        
+        // p.noFill();
+        p.fill(50);
+        p.text('Bertin', 20, 300);
+        p.noLoop();
     }
 }
 
@@ -744,6 +773,9 @@ var lo = function(p) {
         for (var i = 0; i < x3.length; i++) {
             p.ellipse(x3[i], y3[i], 2, 2);
         }
+        p.fill(50);
+        p.text('orientation', 20, 300);
+        p.noLoop();
     }
 }
 
@@ -778,7 +810,10 @@ var ls = function(p) {
         for (var i = 0; i < x3.length; i = i + 3) {
             p.bezier(x3[i], y3[i], x3[i + 1], y3[i + 1], x3[i + 2], y3[i + 2], x3[i + 3], y3[i + 3], 1);
         }
-
+        
+        p.fill(50);
+        p.text('shape', 20, 300);
+        p.noLoop();
     }
 }
 
@@ -808,9 +843,11 @@ var lt = function(p) {
             p.noFill();
             drawGradient2(x2[i], y2[i], 5, 10, c1, c2);
             drawGradient1(x1[i], y1[i], 5, 15, b1, b2);
-            drawGradient3(x3[i], y3[i], 20, 5, c2, c1)
-
+            drawGradient3(x3[i], y3[i], 20, 5, c2, c1);
         }
+        p.fill(50);
+        p.text('texture', 20, 300);
+        p.noLoop();
     }
 
     function drawGradient1(x, y, w, h, b1, b2) {
@@ -880,6 +917,10 @@ var cx = function (p) {
         p.vertex(251.127413583046, 279.705128205125);
         p.vertex(251.127413583046, 114.314097460106);
         p.endShape();
+        
+        p.fill(50);
+        p.text('Bertin', 20, 300);
+        p.noLoop();
     }
 }
 
@@ -904,6 +945,10 @@ var cz = function(p) {
 
         p.fill(90);
         p.rect(210, 114, 40, 166);
+        
+        p.fill(50);
+        p.text('size', 20, 300);
+        p.noLoop();
     }
 }
 
@@ -928,6 +973,10 @@ var co = function(p) {
 
         p.fill(90);
         p.rect(210, 77, 40, 166);
+        
+        p.fill(50);
+        p.text('orientation', 20, 300);
+        p.noLoop();
     }
 }
 
@@ -948,6 +997,9 @@ var ct = function(p) {
         setGradient(69, 186, 40, 94, b1, b2);
         setGradient(140, 39, 40, 241, b1, b2);
         setGradient(210, 114, 40, 166, b1, b2);
+        p.fill(50);
+        p.text('texture', 20, 300);
+        p.noLoop();
     }
 
     function setGradient(x, y, w, h, b1, b2) {
@@ -981,6 +1033,10 @@ var cc = function(p) {
 
         p.fill(255, 110, 111);
         p.rect(210, 114, 40, 166);
+        
+        p.fill(50);
+        p.text('color', 20, 300);
+        p.noLoop();
     }
 
 }
@@ -1416,6 +1472,10 @@ var gx = function (p) {
         p.vertex(15.3308750885662, 303.06);
         p.vertex(15.3308750885662, 18.2626692645499);
         p.endShape();
+        
+        p.fill(50);
+        p.text('Bertin', 20, 300);
+        p.noLoop();
     }
 }
 
@@ -1463,6 +1523,10 @@ var gs = function(p) {
             p.vertex(ny_xcoor[i], ny_ycoor[i]);
             p.endShape();
         }
+        
+        p.fill(50);
+        p.text('shape', 20, 300);
+        p.noLoop();
     }
 }
 
@@ -1897,6 +1961,10 @@ var gc = function(p) {
         p.vertex(15.3308750885662, 303.06);
         p.vertex(15.3308750885662, 18.2626692645499);
         p.endShape();
+        
+        p.fill(50);
+        p.text('color', 20, 300);
+        p.noLoop();
     }
 }
 

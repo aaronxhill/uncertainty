@@ -23,8 +23,11 @@ var pt = function(p) {
             drawGradient(x1[i], y1[i]);
             drawGradient2(x2[i], y2[i]);
             drawGradient3(x3[i], y3[i]);
-
         }
+        
+        p.fill(50);
+        p.text('texture', 20, 300);
+        p.noLoop();
     }
 
     function drawGradient(x, y) {
