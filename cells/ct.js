@@ -10,12 +10,11 @@ var ct = function(p) {
         p.line(40.6, 280, 280, 280);
         var b1 = p.color(221, 221, 221);
         var b2 = p.color(109, 109, 109);
+        p.fill(50);
+        p.text('texture', 20, 300);
         setGradient(69, 186, 40, 94, b1, b2);
         setGradient(140, 39, 40, 241, b1, b2);
         setGradient(210, 114, 40, 166, b1, b2);
-        p.fill(50);
-        p.text('texture', 20, 300);
-        p.noLoop();
     }
 
     function setGradient(x, y, w, h, b1, b2) {

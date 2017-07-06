@@ -10,6 +10,7 @@ var lt = function(p) {
 
     p.setup = function() {
         p.createCanvas(320, 320);
+        p.noLoop();
     }
 
     p.draw = function() {
@@ -18,15 +19,14 @@ var lt = function(p) {
         var b2 = p.color(40, 40, 40);
         var c1 = p.color(90, 90, 90);
         var c2 = p.color(221, 221, 221);
+        p.fill(50);
+        p.text('texture', 20, 300);
         for (var i = 0; i < x1.length; i++) {
             p.noFill();
             drawGradient2(x2[i], y2[i], 5, 10, c1, c2);
             drawGradient1(x1[i], y1[i], 5, 15, b1, b2);
             drawGradient3(x3[i], y3[i], 20, 5, c2, c1);
         }
-        p.fill(50);
-        p.text('texture', 20, 300);
-        p.noLoop();
     }
 
     function drawGradient1(x, y, w, h, b1, b2) {

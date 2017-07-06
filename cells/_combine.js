@@ -6,7 +6,7 @@ xfs.truncate('/home/ubuntu/workspace/uncertainty/public/sketch.js', 0, function(
     }
 });
 
-var files = ['po.js', 'ptb.js', 'pt.js', 'ps.js', 'pz.js', 'pc.js',
-             'lx.js', 'lo.js', 'ls.js', 'lt.js', 
-             'cx.js', 'cz.js', 'co.js', 'ct.js', 'cc.js',
+var files = ['ps.js', 'po.js', 'pc.js', 'ptb.js', 'pt.js', 'pz.js',
+             'lx.js', 'ls.js', 'lo.js', 'lt.js', 
+             'cx.js', 'co.js', 'cc.js', 'ct.js', 'cz.js',
              'gx.js', 'gs.js', 'gc.js'];
