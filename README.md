@@ -9,7 +9,7 @@ This work (in progress) is to adopt and extend an existing visual language for t
 
 These illustrations are in the process of being replicated using the JavaScript Library [P5.js](https://p5js.org/) to serve as a foundation for experimentation with visual variables and geography toward the communication of uncertainty in data. The definition of "area" has been expanded to allow for differentiation between Cartesian and geographic coordinate systems. The source code for each classification can be found in the following table:
 
- | point | line | area (c) | area (g)
+. | point | line | area (c) | area (g)
 --- | --- | --- | --- | ---
 shape | [ps](https://github.com/aaronxhill/uncertainty/blob/master/cells/ps.js) | [ls](https://github.com/aaronxhill/uncertainty/blob/master/cells/ls.js) | cs | [gs](https://github.com/aaronxhill/uncertainty/blob/master/cells/gs.js)
 orientation | [po](https://github.com/aaronxhill/uncertainty/blob/master/cells/po.js) | [lo](https://github.com/aaronxhill/uncertainty/blob/master/cells/lo.js) | [co](https://github.com/aaronxhill/uncertainty/blob/master/cells/co.js) | go
