@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Visualizing Uncertainty</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script language="javascript" type="text/javascript" src="js/scripts.js"></script>
+    <style>
+      #outer-container {
+        max-width: 1340px;
+      }
+    </style>
+  </head>
+  <body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+<h1>area, placement</h1>
+</div>
+</nav>
+<div id="outer-container">
+<h2>primary</h2>
+<a href="img/2.jpg" data-toggle="tooltip" title="2"><img src="img/2.jpg"></a>
+<a href="img/5.jpg" data-toggle="tooltip" title="5"><img src="img/5.jpg"></a>
+<a href="img/15.jpg" data-toggle="tooltip" title="15"><img src="img/15.jpg"></a>
+<a href="img/20.jpg" data-toggle="tooltip" title="20"><img src="img/20.jpg"></a>
+<a href="img/23.jpg" data-toggle="tooltip" title="23"><img src="img/23.jpg"></a>
+<a href="img/42.jpg" data-toggle="tooltip" title="42"><img src="img/42.jpg"></a>
+<a href="img/44.jpg" data-toggle="tooltip" title="44"><img src="img/44.jpg"></a>
+<a href="img/58.jpg" data-toggle="tooltip" title="58"><img src="img/58.jpg"></a>
+<a href="img/59.jpg" data-toggle="tooltip" title="59"><img src="img/59.jpg"></a>
+<a href="img/64.jpg" data-toggle="tooltip" title="64"><img src="img/64.jpg"></a>
+<a href="img/74.jpg" data-toggle="tooltip" title="74"><img src="img/74.jpg"></a>
+<a href="img/76.jpg" data-toggle="tooltip" title="76"><img src="img/76.jpg"></a>
+<a href="img/79.jpg" data-toggle="tooltip" title="79"><img src="img/79.jpg"></a>
+<a href="img/80.jpg" data-toggle="tooltip" title="80"><img src="img/80.jpg"></a>
+<a href="img/84.jpg" data-toggle="tooltip" title="84"><img src="img/84.jpg"></a>
+<a href="img/85.jpg" data-toggle="tooltip" title="85"><img src="img/85.jpg"></a>
+<a href="img/86.jpg" data-toggle="tooltip" title="86"><img src="img/86.jpg"></a>
+<a href="img/92.jpg" data-toggle="tooltip" title="92"><img src="img/92.jpg"></a>
+<a href="img/93.jpg" data-toggle="tooltip" title="93"><img src="img/93.jpg"></a>
+<a href="img/94.jpg" data-toggle="tooltip" title="94"><img src="img/94.jpg"></a>
+<a href="img/97.jpg" data-toggle="tooltip" title="97"><img src="img/97.jpg"></a>
+<a href="img/100.jpg" data-toggle="tooltip" title="100"><img src="img/100.jpg"></a>
+<a href="img/104.jpg" data-toggle="tooltip" title="104"><img src="img/104.jpg"></a>
+<a href="img/112.jpg" data-toggle="tooltip" title="112"><img src="img/112.jpg"></a>
+<a href="img/116.jpg" data-toggle="tooltip" title="116"><img src="img/116.jpg"></a>
+<a href="img/118.jpg" data-toggle="tooltip" title="118"><img src="img/118.jpg"></a>
+<a href="img/129.jpg" data-toggle="tooltip" title="129"><img src="img/129.jpg"></a>
+<a href="img/139.jpg" data-toggle="tooltip" title="139"><img src="img/139.jpg"></a>
+<a href="img/143.jpg" data-toggle="tooltip" title="143"><img src="img/143.jpg"></a>
+<a href="img/163.jpg" data-toggle="tooltip" title="163"><img src="img/163.jpg"></a>
+<a href="img/164.jpg" data-toggle="tooltip" title="164"><img src="img/164.jpg"></a>
+<a href="img/166.jpg" data-toggle="tooltip" title="166"><img src="img/166.jpg"></a>
+<a href="img/167.jpg" data-toggle="tooltip" title="167"><img src="img/167.jpg"></a>
+<a href="img/189.jpg" data-toggle="tooltip" title="189"><img src="img/189.jpg"></a>
+<a href="img/210.jpg" data-toggle="tooltip" title="210"><img src="img/210.jpg"></a>
+<a href="img/213.jpg" data-toggle="tooltip" title="213"><img src="img/213.jpg"></a>
+<a href="img/216.jpg" data-toggle="tooltip" title="216"><img src="img/216.jpg"></a>
+<a href="img/217.jpg" data-toggle="tooltip" title="217"><img src="img/217.jpg"></a>
+<a href="img/222.jpg" data-toggle="tooltip" title="222"><img src="img/222.jpg"></a>
+<a href="img/226.jpg" data-toggle="tooltip" title="226"><img src="img/226.jpg"></a>
+<a href="img/232.jpg" data-toggle="tooltip" title="232"><img src="img/232.jpg"></a>
+<a href="img/235.jpg" data-toggle="tooltip" title="235"><img src="img/235.jpg"></a>
+<a href="img/238.jpg" data-toggle="tooltip" title="238"><img src="img/238.jpg"></a>
+<a href="img/239.jpg" data-toggle="tooltip" title="239"><img src="img/239.jpg"></a>
+<a href="img/247.jpg" data-toggle="tooltip" title="247"><img src="img/247.jpg"></a>
+<a href="img/251.jpg" data-toggle="tooltip" title="251"><img src="img/251.jpg"></a>
+<a href="img/256.jpg" data-toggle="tooltip" title="256"><img src="img/256.jpg"></a>
+<a href="img/264.jpg" data-toggle="tooltip" title="264"><img src="img/264.jpg"></a>
+<a href="img/281.jpg" data-toggle="tooltip" title="281"><img src="img/281.jpg"></a>
+<a href="img/287.jpg" data-toggle="tooltip" title="287"><img src="img/287.jpg"></a>
+<a href="img/291.jpg" data-toggle="tooltip" title="291"><img src="img/291.jpg"></a>
+<a href="img/294.jpg" data-toggle="tooltip" title="294"><img src="img/294.jpg"></a>
+<a href="img/295.jpg" data-toggle="tooltip" title="295"><img src="img/295.jpg"></a>
+<a href="img/319.jpg" data-toggle="tooltip" title="319"><img src="img/319.jpg"></a>
+<a href="img/323.jpg" data-toggle="tooltip" title="323"><img src="img/323.jpg"></a>
+<a href="img/328.jpg" data-toggle="tooltip" title="328"><img src="img/328.jpg"></a>
+<a href="img/330.jpg" data-toggle="tooltip" title="330"><img src="img/330.jpg"></a>
+<a href="img/333.jpg" data-toggle="tooltip" title="333"><img src="img/333.jpg"></a>
+<a href="img/337.jpg" data-toggle="tooltip" title="337"><img src="img/337.jpg"></a>
+<a href="img/349.jpg" data-toggle="tooltip" title="349"><img src="img/349.jpg"></a>
+<a href="img/352.jpg" data-toggle="tooltip" title="352"><img src="img/352.jpg"></a>
+<a href="img/359.jpg" data-toggle="tooltip" title="359"><img src="img/359.jpg"></a>
+<a href="img/381.jpg" data-toggle="tooltip" title="381"><img src="img/381.jpg"></a>
+<a href="img/396.jpg" data-toggle="tooltip" title="396"><img src="img/396.jpg"></a>
+<a href="img/399.jpg" data-toggle="tooltip" title="399"><img src="img/399.jpg"></a>
+<a href="img/403.jpg" data-toggle="tooltip" title="403"><img src="img/403.jpg"></a>
+<h2>secondary</h2>
+<a href="img/3.jpg" data-toggle="tooltip" title="3"><img src="img/3.jpg"></a>
+<a href="img/4.jpg" data-toggle="tooltip" title="4"><img src="img/4.jpg"></a>
+<a href="img/6.jpg" data-toggle="tooltip" title="6"><img src="img/6.jpg"></a>
+<a href="img/8.jpg" data-toggle="tooltip" title="8"><img src="img/8.jpg"></a>
+<a href="img/9.jpg" data-toggle="tooltip" title="9"><img src="img/9.jpg"></a>
+<a href="img/11.jpg" data-toggle="tooltip" title="11"><img src="img/11.jpg"></a>
+<a href="img/12.jpg" data-toggle="tooltip" title="12"><img src="img/12.jpg"></a>
+<a href="img/14.jpg" data-toggle="tooltip" title="14"><img src="img/14.jpg"></a>
+<a href="img/16.jpg" data-toggle="tooltip" title="16"><img src="img/16.jpg"></a>
+<a href="img/19.jpg" data-toggle="tooltip" title="19"><img src="img/19.jpg"></a>
+<a href="img/21.jpg" data-toggle="tooltip" title="21"><img src="img/21.jpg"></a>
+<a href="img/25.jpg" data-toggle="tooltip" title="25"><img src="img/25.jpg"></a>
+<a href="img/26.jpg" data-toggle="tooltip" title="26"><img src="img/26.jpg"></a>
+<a href="img/30.jpg" data-toggle="tooltip" title="30"><img src="img/30.jpg"></a>
+<a href="img/32.jpg" data-toggle="tooltip" title="32"><img src="img/32.jpg"></a>
+<a href="img/33.jpg" data-toggle="tooltip" title="33"><img src="img/33.jpg"></a>
+<a href="img/38.jpg" data-toggle="tooltip" title="38"><img src="img/38.jpg"></a>
+<a href="img/40.jpg" data-toggle="tooltip" title="40"><img src="img/40.jpg"></a>
+<a href="img/41.jpg" data-toggle="tooltip" title="41"><img src="img/41.jpg"></a>
+<a href="img/50.jpg" data-toggle="tooltip" title="50"><img src="img/50.jpg"></a>
+<a href="img/51.jpg" data-toggle="tooltip" title="51"><img src="img/51.jpg"></a>
+<a href="img/52.jpg" data-toggle="tooltip" title="52"><img src="img/52.jpg"></a>
+<a href="img/66.jpg" data-toggle="tooltip" title="66"><img src="img/66.jpg"></a>
+<a href="img/68.jpg" data-toggle="tooltip" title="68"><img src="img/68.jpg"></a>
+<a href="img/72.jpg" data-toggle="tooltip" title="72"><img src="img/72.jpg"></a>
+<a href="img/73.jpg" data-toggle="tooltip" title="73"><img src="img/73.jpg"></a>
+<a href="img/77.jpg" data-toggle="tooltip" title="77"><img src="img/77.jpg"></a>
+<a href="img/82.jpg" data-toggle="tooltip" title="82"><img src="img/82.jpg"></a>
+<a href="img/83.jpg" data-toggle="tooltip" title="83"><img src="img/83.jpg"></a>
+<a href="img/90.jpg" data-toggle="tooltip" title="90"><img src="img/90.jpg"></a>
+<a href="img/91.jpg" data-toggle="tooltip" title="91"><img src="img/91.jpg"></a>
+<a href="img/95.jpg" data-toggle="tooltip" title="95"><img src="img/95.jpg"></a>
+<a href="img/98.jpg" data-toggle="tooltip" title="98"><img src="img/98.jpg"></a>
+<a href="img/101.jpg" data-toggle="tooltip" title="101"><img src="img/101.jpg"></a>
+<a href="img/105.jpg" data-toggle="tooltip" title="105"><img src="img/105.jpg"></a>
+<a href="img/109.jpg" data-toggle="tooltip" title="109"><img src="img/109.jpg"></a>
+<a href="img/113.jpg" data-toggle="tooltip" title="113"><img src="img/113.jpg"></a>
+<a href="img/119.jpg" data-toggle="tooltip" title="119"><img src="img/119.jpg"></a>
+<a href="img/120.jpg" data-toggle="tooltip" title="120"><img src="img/120.jpg"></a>
+<a href="img/123.jpg" data-toggle="tooltip" title="123"><img src="img/123.jpg"></a>
+<a href="img/124.jpg" data-toggle="tooltip" title="124"><img src="img/124.jpg"></a>
+<a href="img/148.jpg" data-toggle="tooltip" title="148"><img src="img/148.jpg"></a>
+<a href="img/150.jpg" data-toggle="tooltip" title="150"><img src="img/150.jpg"></a>
+<a href="img/157.jpg" data-toggle="tooltip" title="157"><img src="img/157.jpg"></a>
+<a href="img/162.jpg" data-toggle="tooltip" title="162"><img src="img/162.jpg"></a>
+<a href="img/174.jpg" data-toggle="tooltip" title="174"><img src="img/174.jpg"></a>
+<a href="img/175.jpg" data-toggle="tooltip" title="175"><img src="img/175.jpg"></a>
+<a href="img/190.jpg" data-toggle="tooltip" title="190"><img src="img/190.jpg"></a>
+<a href="img/192.jpg" data-toggle="tooltip" title="192"><img src="img/192.jpg"></a>
+<a href="img/197.jpg" data-toggle="tooltip" title="197"><img src="img/197.jpg"></a>
+<a href="img/198.jpg" data-toggle="tooltip" title="198"><img src="img/198.jpg"></a>
+<a href="img/199.jpg" data-toggle="tooltip" title="199"><img src="img/199.jpg"></a>
+<a href="img/203.jpg" data-toggle="tooltip" title="203"><img src="img/203.jpg"></a>
+<a href="img/207.jpg" data-toggle="tooltip" title="207"><img src="img/207.jpg"></a>
+<a href="img/209.jpg" data-toggle="tooltip" title="209"><img src="img/209.jpg"></a>
+<a href="img/223.jpg" data-toggle="tooltip" title="223"><img src="img/223.jpg"></a>
+<a href="img/225.jpg" data-toggle="tooltip" title="225"><img src="img/225.jpg"></a>
+<a href="img/227.jpg" data-toggle="tooltip" title="227"><img src="img/227.jpg"></a>
+<a href="img/229.jpg" data-toggle="tooltip" title="229"><img src="img/229.jpg"></a>
+<a href="img/233.jpg" data-toggle="tooltip" title="233"><img src="img/233.jpg"></a>
+<a href="img/244.jpg" data-toggle="tooltip" title="244"><img src="img/244.jpg"></a>
+<a href="img/254.jpg" data-toggle="tooltip" title="254"><img src="img/254.jpg"></a>
+<a href="img/258.jpg" data-toggle="tooltip" title="258"><img src="img/258.jpg"></a>
+<a href="img/259.jpg" data-toggle="tooltip" title="259"><img src="img/259.jpg"></a>
+<a href="img/262.jpg" data-toggle="tooltip" title="262"><img src="img/262.jpg"></a>
+<a href="img/265.jpg" data-toggle="tooltip" title="265"><img src="img/265.jpg"></a>
+<a href="img/266.jpg" data-toggle="tooltip" title="266"><img src="img/266.jpg"></a>
+<a href="img/274.jpg" data-toggle="tooltip" title="274"><img src="img/274.jpg"></a>
+<a href="img/275.jpg" data-toggle="tooltip" title="275"><img src="img/275.jpg"></a>
+<a href="img/284.jpg" data-toggle="tooltip" title="284"><img src="img/284.jpg"></a>
+<a href="img/290.jpg" data-toggle="tooltip" title="290"><img src="img/290.jpg"></a>
+<a href="img/304.jpg" data-toggle="tooltip" title="304"><img src="img/304.jpg"></a>
+<a href="img/306.jpg" data-toggle="tooltip" title="306"><img src="img/306.jpg"></a>
+<a href="img/315.jpg" data-toggle="tooltip" title="315"><img src="img/315.jpg"></a>
+<a href="img/320.jpg" data-toggle="tooltip" title="320"><img src="img/320.jpg"></a>
+<a href="img/325.jpg" data-toggle="tooltip" title="325"><img src="img/325.jpg"></a>
+<a href="img/326.jpg" data-toggle="tooltip" title="326"><img src="img/326.jpg"></a>
+<a href="img/346.jpg" data-toggle="tooltip" title="346"><img src="img/346.jpg"></a>
+<a href="img/351.jpg" data-toggle="tooltip" title="351"><img src="img/351.jpg"></a>
+<a href="img/354.jpg" data-toggle="tooltip" title="354"><img src="img/354.jpg"></a>
+<a href="img/356.jpg" data-toggle="tooltip" title="356"><img src="img/356.jpg"></a>
+<a href="img/364.jpg" data-toggle="tooltip" title="364"><img src="img/364.jpg"></a>
+<a href="img/365.jpg" data-toggle="tooltip" title="365"><img src="img/365.jpg"></a>
+<a href="img/367.jpg" data-toggle="tooltip" title="367"><img src="img/367.jpg"></a>
+<a href="img/372.jpg" data-toggle="tooltip" title="372"><img src="img/372.jpg"></a>
+<a href="img/378.jpg" data-toggle="tooltip" title="378"><img src="img/378.jpg"></a>
+<a href="img/383.jpg" data-toggle="tooltip" title="383"><img src="img/383.jpg"></a>
+<a href="img/389.jpg" data-toggle="tooltip" title="389"><img src="img/389.jpg"></a>
+<a href="img/390.jpg" data-toggle="tooltip" title="390"><img src="img/390.jpg"></a>
+<a href="img/392.jpg" data-toggle="tooltip" title="392"><img src="img/392.jpg"></a>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
