@@ -4,7 +4,7 @@ var ps = function (p) {
         p.createCanvas(320, 320);
     };
     p.draw = function() {
-        p.background(220);
+        p.background(255);
         p.fill(0);
         p.ellipse(76.3, 59.4, 3, 3);
         p.ellipse(102.4, 70.3, 3, 3);

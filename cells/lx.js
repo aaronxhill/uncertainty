@@ -5,7 +5,7 @@ var lx = function (p) {
     };
     
     p.draw = function() {
-        p.background(230);
+        p.background(255);
         p.noFill();
 
         p.beginShape();//west village

@@ -7,7 +7,7 @@ var pc = function(p) {
 
     p.draw = function() {
         p.strokeWeight(0);
-        p.background(250);
+        p.background(255);
         //new color
         p.fill(0, 191, 255);
         p.ellipse(76.3, 59.4, 6, 6);

@@ -16,7 +16,7 @@ var pt = function(p) {
 
 
     p.draw = function() {
-        p.background(210);
+        p.background(255);
         //new color
         p.noFill();
         for (var i = 0; i < x1.length; i++) {

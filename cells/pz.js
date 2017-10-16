@@ -13,7 +13,7 @@ var pz = function(p) {
 
     p.draw = function() {
         p.strokeWeight(.5);
-        p.background(210);
+        p.background(255);
         //new color
         p.noFill();
         for (var i = 0; i < x1.length; i++) {

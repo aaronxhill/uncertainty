@@ -14,7 +14,7 @@ var po = function(p) {
 
     p.draw = function() {
         p.strokeWeight(1);
-        p.background(250);
+        p.background(255);
         //new color
         p.noFill;
         for (var i = 0; i < x1.length; i++) {
