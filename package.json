@@ -1,0 +1,25 @@
+{
+  "name": "uncertainty",
+  "version": "0.0.9",
+  "description": "the visual display of uncertainty",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^0.2.10",
+    "express": "^3.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronxhill/uncertainty.git"
+  },
+  "author": "Aaron Hill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronxhill/uncertainty/issues"
+  },
+  "homepage": "https://github.com/aaronxhill/uncertainty#readme"
+}
