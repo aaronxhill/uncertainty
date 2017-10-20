@@ -21,7 +21,7 @@ p.draw = function() {
   p.strokeWeight(1.5);
   p.background(50);
   p.image(img, 0, 0);
-  p.colorMode(RGB);
+  p.colorMode(p.RGB);
   p.noFill();
   p.beginShape(); //penn
     p.vertex(15.3308750885662, 37.3796838477192);

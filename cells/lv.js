@@ -4,11 +4,11 @@ var lv = function(p) {
     p.setup = function() {
         p.createCanvas(320, 320);
                 p.noLoop();
+                p.text('value', 20, 300);
 
     }
 
     p.draw = function() {
-        p.background(255, 255, 255);
         p.noFill();
         p.beginShape();
         p.strokeWeight(4);
@@ -216,13 +216,8 @@ var lv = function(p) {
 			p.vertex(288.748688185202, 215.068511624386);
 			p.vertex(303.512055899548, 239.503069616012);
     p.endShape();
-    
-    p.fill(50);
-      p.strokeWeight(1);
-      p.stroke('black');
-        p.text('value', 20, 300);
-        p.noLoop();
 
+        p.noLoop();    
 
 }
 }
