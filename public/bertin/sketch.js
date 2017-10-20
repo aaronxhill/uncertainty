@@ -3093,7 +3093,15 @@ p.draw = function() {
     p.vertex(115.005155188889, 303.055759279156);
   p.endShape();
 
+  p.fill(255);
+    p.strokeWeight(0);
+  p.rect(0, 0, 15, 320);
+  p.rect(0, 0, 320, 18);
+  p.rect(305, 0, 15, 320);
+  p.rect(0, 303, 320, 18);
+
   p.noFill();
+  p.strokeWeight(1);
   p.beginShape();//border
     p.vertex(15.3308750885662, 18.2626692645499);
     p.vertex(305.504000130179, 18.2626692645499);
@@ -3643,6 +3651,10 @@ p.setup = function()  {
   img.updatePixels();
 }
 
+// p.setup = function()  {
+//   p.createCanvas(320, 320);
+//   img = p.loadImage("texture.png");
+// }
 
 p.draw = function() {
   p.strokeWeight(1.5);
@@ -4062,7 +4074,15 @@ p.draw = function() {
     p.vertex(115.005155188889, 303.055759279156);
   p.endShape();
 
+  p.fill(255);
+    p.strokeWeight(0);
+  p.rect(0, 0, 15, 320);
+  p.rect(0, 0, 320, 18);
+  p.rect(305, 0, 15, 320);
+  p.rect(0, 303, 320, 18);
+
   p.noFill();
+  p.strokeWeight(1);
   p.beginShape();//border
     p.vertex(15.3308750885662, 18.2626692645499);
     p.vertex(305.504000130179, 18.2626692645499);
