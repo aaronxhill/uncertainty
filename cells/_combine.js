@@ -6,9 +6,7 @@ xfs.truncate('sketch.js', 0, function() {
     }
 });
 
-var files = ['ps.js', 'po.js', 'pc.js', 'ptb.js', 'pt.js', 'pz.js','pv.js',
-             'lx.js', 'ls.js', 'lo.js', 'lc.js', 'lt.js', 'lz.js','lv.js', 
-             'cx.js', 'cs.js', 'co.js', 'cc.js', 'ct.js', 'cz.js','cv.js',
-             'gx.js', 'gs.js', 'gc.js', 'gv.js'];
-             
-             
+var files = ['px.js', 'ps.js', 'po.js', 'pc.js', 'ptb.js', 'pt.js', 'pv.js','pz.js',
+             'lx.js', 'ls.js', 'lo.js', 'lc.js', 'lt.js', 'lv.js', 'lz.js',  
+             'cx.js', 'cs.js', 'co.js', 'cc.js', 'ct.js', 'cv.js', 'cz.js',  
+             'gx.js', 'gs.js', 'go.js', 'gc.js', 'gt.js', 'gv.js', 'gz.js' ];

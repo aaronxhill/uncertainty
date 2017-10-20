@@ -1,6 +1,6 @@
 //*************************************************************************************//
 
-var gs = function(p) {
+var gt = function(p) {
 	var img;
 
 p.setup = function()  {
@@ -445,3 +445,5 @@ p.draw = function() {
   p.endShape();
 }
 }
+
+new p5(gt, 'gt');
