@@ -3,6 +3,8 @@ var lv = function(p) {
 
     p.setup = function() {
         p.createCanvas(320, 320);
+                p.noLoop();
+
     }
 
     p.draw = function() {
@@ -216,6 +218,8 @@ var lv = function(p) {
     p.endShape();
     
     p.fill(50);
+      p.strokeWeight(1);
+      p.stroke('black');
         p.text('value', 20, 300);
         p.noLoop();
 

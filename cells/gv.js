@@ -429,7 +429,7 @@ var gv = function(p) {
         p.endShape();
         
        p.fill(50);
-        p.text('value', 20, 300);
+        p.text('value', 250, 300);
         p.noLoop();
 }
 }

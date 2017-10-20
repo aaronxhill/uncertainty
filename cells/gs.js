@@ -79,7 +79,7 @@ var gs = function(p) {
         
 
         p.fill(50);
-        p.text('shape', 80, 300);
+        p.text('shape', 250, 300);
         p.noLoop();
     }
 }

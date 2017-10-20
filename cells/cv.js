@@ -17,6 +17,11 @@ var cv = function(p) {
 
     p.fill(50,50,5);
     p.rect(210, 114, 40, 166);
+
+        p.fill(50);
+    p.text('value', 20, 300);
+    p.noLoop();
+
 }
 }
 

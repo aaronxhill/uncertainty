@@ -21,7 +21,7 @@ var angle4 = [-2.4, -2.2, -2.15, -1.5, -1.6, -1.7, -1.75, -1.6, -1.55, -1.50, -1
 
 p.setup = function()  {
   p.createCanvas(320, 320);
-  p.background(255,255);
+  p.background(255);
 
 }
 
@@ -487,6 +487,10 @@ p.draw = function() {
       		p.pop();
       		}
   p.noLoop();
+
+          p.fill(50);
+        p.text('orientation', 225, 300);
+        p.noLoop();
 
 }
 

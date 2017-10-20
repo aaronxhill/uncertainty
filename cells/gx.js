@@ -429,7 +429,7 @@ var gx = function (p) {
         p.endShape();
         
         p.fill(50);
-        p.text('Bertin', 20, 300);
+        p.text('data', 250, 300);
         p.noLoop();
     }
 }

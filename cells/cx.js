@@ -34,7 +34,7 @@ var cx = function (p) {
         p.endShape();
         
         p.fill(50);
-        p.text('Bertin', 20, 300);
+        p.text('data', 20, 300);
         p.noLoop();
     }
 }

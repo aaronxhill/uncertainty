@@ -5,7 +5,7 @@ var lz = function(p) {
 }
 
 	p.draw = function() {
-		p.background(250,250);
+		p.background(255, 255, 255);
 		p.noFill();
 		p.beginShape();
     			p.strokeWeight(3);

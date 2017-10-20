@@ -130,6 +130,11 @@ var pv = function(p) {
   p.ellipse(292, 159, 6, 6);
   p.ellipse(289, 172, 6, 6);
   p.ellipse(297, 183, 6, 6);
+
+        p.fill(50);
+        p.text('value', 20, 300);
+        p.noLoop();
+
 }
 }
 

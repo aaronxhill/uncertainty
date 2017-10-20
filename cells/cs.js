@@ -3,7 +3,7 @@ var cs = function(p) {
     
     p.setup = function() {
         p.createCanvas(320, 320);
-        p.background(250)
+        p.background(255, 255, 255)
         p.noFill();
 }
 

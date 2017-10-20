@@ -429,7 +429,7 @@ var gc = function(p) {
         p.endShape();
         
         p.fill(50);
-        p.text('color', 20, 300);
+        p.text('color', 250, 300);
         p.noLoop();
     }
 }
