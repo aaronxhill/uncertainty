@@ -1,0 +1,27 @@
+img {
+    /*max-width: 360px;*/
+    /*height: auto;*/
+}
+
+body {
+  padding-top: 60px;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+#fotos-toview {
+	margin: 60px;
+	margin-right: 5px; 
+}
+
+.table {
+	margin: 60px;
+	width: 400px;
+}
+
+#toview {
+	margin: 60px;
+}
