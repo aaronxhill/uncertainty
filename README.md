@@ -7,20 +7,7 @@ Any time that data is used to better understand the world--for any reason, from 
 This work (in progress) is to adopt and extend an existing visual language for the explicit purpose of visual expression of uncertainty and error. The system proposed by Jacques Bertin in his 1967 book *Semiology of Graphics* is adopted with minor adaptations as the basis for communication of graphical elements and their placements in the planar system. Bertin identifies six visual variables in the planar dimensions: size, value, texture, color, orientation, and shape. There are three types of signification--point, line, and area--that are the elementary figures of geography. Example variations on the visual variables by type of signification are illustrated by Bertin:
 ![Bertin, 19xx](https://github.com/aaronxhill/uncertainty/raw/master/bertin/bertin.png)
 
-These illustrations are in the process of being replicated using the JavaScript Library [P5.js](https://p5js.org/) to serve as a foundation for experimentation with visual variables and geography toward the communication of uncertainty in data. The definition of "area" has been expanded to allow for differentiation between Cartesian and geographic coordinate systems. The source code for each classification can be found in the following table:
-
-. | point | line | area (c) | area (g)
---- | --- | --- | --- | ---
-shape | [ps](https://github.com/aaronxhill/uncertainty/blob/master/cells/ps.js) | [ls](https://github.com/aaronxhill/uncertainty/blob/master/cells/ls.js) | cs | [gs](https://github.com/aaronxhill/uncertainty/blob/master/cells/gs.js)
-orientation | [po](https://github.com/aaronxhill/uncertainty/blob/master/cells/po.js) | [lo](https://github.com/aaronxhill/uncertainty/blob/master/cells/lo.js) | [co](https://github.com/aaronxhill/uncertainty/blob/master/cells/co.js) | go
-color | [pc](https://github.com/aaronxhill/uncertainty/blob/master/cells/pc.js) | lc | [cc](https://github.com/aaronxhill/uncertainty/blob/master/cells/po.js) | [gc](https://github.com/aaronxhill/uncertainty/blob/master/cells/gc.js)
-texture | [pt](https://github.com/aaronxhill/uncertainty/blob/master/cells/pt.js) | [lt](https://github.com/aaronxhill/uncertainty/blob/master/cells/lt.js) | [ct](https://github.com/aaronxhill/uncertainty/blob/master/cells/ct.js) | gt
-value | pv | lv | cv | gv
-size | [pz](https://github.com/aaronxhill/uncertainty/blob/master/cells/pz.js) | lz | [cz](https://github.com/aaronxhill/uncertainty/blob/master/cells/cz.js) | gz
-
-Drafts of these classifications can be viewed at [www.visualizeuncertainty.io](http://www.visualizeuncertainty.io/).
-
-The next phase introduces variables of animation and interactive design and new ways of simulating and estimating distributions so they can be shown visually.
+The full corpus of work can be viewed at [www.visualizeuncertainty.io](http://www.visualizeuncertainty.io/).
 
 #### Related Reading
 
