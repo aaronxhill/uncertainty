@@ -38,7 +38,7 @@ var height = 256;
 var radius = 3.5; 
 var opac = 0.2;
 
-var svg = d3.select("body")
+var svg = d3.select("#d3Here")
     .append("svg")
         .attr("width", width)
         .attr("height", height);

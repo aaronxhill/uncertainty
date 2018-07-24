@@ -27,7 +27,7 @@ var radius = 3.5;
 //     .x(function(d) { return d[0]; })
 //     .y(function(d) { return d[1]; });
 
-var svg = d3.select("body")
+var svg = d3.select("#d3Here")
     .append("svg")
         .attr("width", width)
         .attr("height", height);

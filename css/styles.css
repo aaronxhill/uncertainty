@@ -1,27 +1,12 @@
-img {
-    /*max-width: 360px;*/
-    /*height: auto;*/
+#d3Here {
+ z-index: 0;
 }
 
-body {
-  padding-top: 60px;
-}
-@media (max-width: 979px) {
-  body {
-    padding-top: 0px;
-  }
+#overD3 {
+  z-index: 1;
 }
 
-#fotos-toview {
-	margin: 60px;
-	margin-right: 5px; 
+#iGrid {
+  padding: 20px;
 }
 
-.table {
-	margin: 60px;
-	width: 400px;
-}
-
-#toview {
-	margin: 60px;
-}

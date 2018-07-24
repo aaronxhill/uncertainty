@@ -26,7 +26,7 @@ var line5 = d3.line()
     .x(function(d) { return d[0] + randn_bm() * 5; })
     .y(function(d) { return d[1] + randn_bm() * 5; });
 
-var svg = d3.select("body")
+var svg = d3.select("#d3Here")
     .append("svg")
         .attr("width", width)
         .attr("height", height);

@@ -47,7 +47,7 @@ var line = d3.line()
     .x(function(d) { return d[0] + randn_bm() * movementFactor; })
     .y(function(d) { return d[1] + randn_bm() * movementFactor; });
 
-var svg = d3.select("body")
+var svg = d3.select("#d3Here")
     .append("svg")
         .attr("width", width)
         .attr("height", height);

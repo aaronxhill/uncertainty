@@ -19,7 +19,7 @@ var width = 1024;
 var height = 256;
 var radius = 3.5; 
 
-var svg = d3.select("body")
+var svg = d3.select("#d3Here")
     .append("svg")
         .attr("width", width)
         .attr("height", height);
