@@ -223,11 +223,12 @@ h4 a:link,h5 a:link {
 
 }
 
-.modall a:hover {
+.modall:hover {
 
     font-weight: bold;
-    border-bottom-color: #fff;
+    /*border-bottom-color: #fff;*/
     text-decoration: none;
+    color: #54278f;
 
 }
 
