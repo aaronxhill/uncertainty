@@ -185,15 +185,18 @@ img {
 /* EDK - BEGIN DIAGONAL LINE FOR BUTTONS */
 
 .btn-outline-dark.dropdown-toggle.diag {
-  background: linear-gradient(to top right, #fff calc(50% - 1px), #f00, #fff calc(50% + 1px) );
+  /*background: linear-gradient(to top right, #fff calc(50% - 1px), #f00, #fff calc(50% + 1px) );*/
+  background: linear-gradient(to top right, #fff calc(50% - 1px), #000, #fff calc(50% + 1px) );
 }
 .btn-outline-dark.dropdown-toggle.diag:hover {
-	background:#f00;
+	/*background:#f00;*/
+	background:#000;
 	color:#fff;
 }
 
 .hoverr {
-	background:#f00;
+	/*background:#f00;*/
+	background:#000;
 	color:#fff;	
 }
 

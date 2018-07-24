@@ -145,7 +145,8 @@ function renderDropdown (vvSelector, bStatus, maxSel=7) {
 			$(btnSel).css("color", "black");
 		}
 		if (maxsInCurrent[thisVar] === 0) { 
-			$(btnSel).css("background", "linear-gradient(to top right, #fff calc(50% - 1px), #dc3545, #fff calc(50% + 1px)");
+			// $(btnSel).css("background", "linear-gradient(to top right, #fff calc(50% - 1px), #dc3545, #fff calc(50% + 1px)");
+			$(btnSel).css("background", "linear-gradient(to top right, #fff calc(50% - 1px), #000, #fff calc(50% + 1px)");
 		}
 		for (var i=0; i<7; i++) {
 			if (translateMaxToStartingPoint(maxsInCurrent[thisVar]) <= i) {
@@ -170,11 +171,11 @@ function renderDropdown (vvSelector, bStatus, maxSel=7) {
 							if (j < 5) {
 								buttonsStatus[thisVar] = translateStartingPointToMax(j);
 							}
+
 							else {buttonsStatus[thisVar] = 0;}
 				  			applyFilters(currentSelection);
-				  			// renderAll()
 				  		});
-				} 
+				}
 			} 
 			makeSelector(aSelector, clr, i);
 		}
@@ -245,18 +246,17 @@ function renderBool (vvSelectorB) {
 	var thisVarB = vvSelectorB.substr(-2);
 	if (maxsInCurrent[thisVarB] == false) {
 		if (buttonsStatus[thisVarB] == false) {
-			// yellow out
-			// $(btnSelB).css("background", "yellow");
-			// $(btnSelB).addClass("diag");
-			// $(".btn-outline-dark.diag").css("background", "linear-gradient(to top right, #fff calc(50% - 1px), #dc3545, #fff calc(50% + 1px)");
-			$( btnSelB ).css("background", "linear-gradient(to top right, #fff calc(50% - 1px), #dc3545, #fff calc(50% + 1px)");
+			// $( btnSelB ).css("background", "linear-gradient(to top right, #fff calc(50% - 1px), #dc3545, #fff calc(50% + 1px)");
+			$( btnSelB ).css("background", "linear-gradient(to top right, #fff calc(50% - 1px), #000, #fff calc(50% + 1px)");
 
 		$( btnSelB ).hover(
 						  function() {
-						    $( this ).css( "background",  "linear-gradient(to top right, #fff calc(50% - 1px), #dc3545, #fff calc(50% + 1px)");
+						    // $( this ).css( "background",  "linear-gradient(to top right, #fff calc(50% - 1px), #dc3545, #fff calc(50% + 1px)");
+						    $( this ).css( "background",  "linear-gradient(to top right, #fff calc(50% - 1px), #000, #fff calc(50% + 1px)");
 						    $( this ).css( "color", "black");
 						  }, function() {
-						    $( this ).css( "background", "linear-gradient(to top right, #fff calc(50% - 1px), #dc3545, #fff calc(50% + 1px)");
+						    // $( this ).css( "background", "linear-gradient(to top right, #fff calc(50% - 1px), #dc3545, #fff calc(50% + 1px)");
+						    $( this ).css( "background", "linear-gradient(to top right, #fff calc(50% - 1px), #000, #fff calc(50% + 1px)");
 						    $( this ).css( "color", "black");
 						  }
 						);
@@ -436,6 +436,7 @@ function updateDisplayButton() {
 	}
 	else {$( "button#di" ).html("no filters selected");}
 	$( "div#fotos" ).html(""); // ?? RETHINK THIS ??
+	$("#theresMore").hide(); 
 }
 
 function shuffle(array) {
@@ -459,13 +460,6 @@ function shuffle(array) {
 
 $( document ).ready(function() {
 	console.log( "ready!" );
-
-	// $(".btn").css("outline", "none")
-	// $( ".btn-outline-dark" ).focus(
-	// 					  function() {
-	// 					  	$( this ).css("outline", "none")
-	// 					  });
-	// $(".btn-outline-dark.diag").css("background", "linear-gradient(to top right, #fff calc(50% - 1px), #dc3545, #fff calc(50% + 1px)");
 
 	$( "#vu-ki" ).click(function(){
 		handleBool("vu-ki")
@@ -508,7 +502,7 @@ $( document ).ready(function() {
 				thisView = fotoViews.splice(0, 1);
 				for (var i=0; i<thisView[0].length; i++) {
 						// $("div#innerFotos").append('<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"><a href="../views/' + thisView[i].s_no + '.html" data-toggle="tooltip" title="' + thisView[i].s_no + '"><img src="../img_small/' + thisView[i].s_no + '_small.jpg" class="img-fluid"></a></div>');
-						$("div#innerFotos").append('<a href="../views/' + thisView[0][i].s_no + '.html" data-toggle="tooltip" title="' + thisView[0][i].s_no + '"><img src="../img_small/' + thisView[0][i].s_no + '_small.jpg" class="img-fluid"></a>');
+						$("div#innerFotos").append('<a href="../views/' + thisView[0][i].s_no + '.html" data-toggle="tooltip" title="' + thisView[0][i].s_no + '" target="_blank"><img src="../img_small/' + thisView[0][i].s_no + '_small.jpg" class="img-fluid"></a>');
 					}
 					if (fotoViews.length > 0) {
 						$("#theresMore").show();
