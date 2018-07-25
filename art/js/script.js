@@ -391,7 +391,7 @@ function loadNext9(){
 
 		thisView = fotoViews.splice(0, 1);
 		for (var i=0; i<thisView[0].length; i++) {
-			$("div#innerFotos").append('<a href="../views/' + thisView[0][i].s_no + '.html" data-toggle="tooltip" title="' + thisView[0][i].s_no + '"><img src="../img_small/' + thisView[0][i].s_no + '_small.jpg" class="img-fluid"></a>');
+			$("div#innerFotos").append('<a href="../views/' + thisView[0][i].s_no + '.html" data-toggle="tooltip" title="' + thisView[0][i].s_no + '"><img src="../img_cropped/' + thisView[0][i].s_no + '.jpg" class="img-fluid"></a>');
 		}
 		if (fotoViews.length > 0) {
 			$("#theresMore").show();
@@ -502,7 +502,7 @@ $( document ).ready(function() {
 				thisView = fotoViews.splice(0, 1);
 				for (var i=0; i<thisView[0].length; i++) {
 						// $("div#innerFotos").append('<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"><a href="../views/' + thisView[i].s_no + '.html" data-toggle="tooltip" title="' + thisView[i].s_no + '"><img src="../img_small/' + thisView[i].s_no + '_small.jpg" class="img-fluid"></a></div>');
-						$("div#innerFotos").append('<a href="../views/' + thisView[0][i].s_no + '.html" data-toggle="tooltip" title="' + thisView[0][i].title + ', ' + thisView[0][i].artist + '" target="_blank"><img src="../img_small/' + thisView[0][i].s_no + '_small.jpg" class="img-fluid"></a>');
+						$("div#innerFotos").append('<a href="../views/' + thisView[0][i].s_no + '.html" data-toggle="tooltip" title="' + thisView[0][i].title + ', ' + thisView[0][i].artist + '" target="_blank"><img src="../img_cropped/' + thisView[0][i].s_no + '.jpg" class="img-fluid"></a>');
 					}
 					if (fotoViews.length > 0) {
 						$("#theresMore").show();
