@@ -154,7 +154,9 @@ a.disabled {
 img {
     max-width: 360px;
     height: auto;
-    padding-top: 25px;
+    /*padding-top: 25px;*/
+    /*padding-right: 25px;*/
+    padding: 10px; 
 }
 
 .row.display-flex {

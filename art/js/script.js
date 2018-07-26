@@ -365,12 +365,12 @@ function translateStartingPointToMax (maxx) {
 	}
 }
 
-function breakup(x) {
+function breakup(x, n) {
 	var new_x = [];
 	var this_x = [];
 	for (var i = 1; i < x.length + 1; i++) {
         // console.log(i)
-        if (i % 9 === 0) {
+        if (i % n === 0) {
         	this_x.push(x[i-1]);
         	new_x.push(this_x);
         	this_x = [];
@@ -386,7 +386,7 @@ function breakup(x) {
     return (new_x);
 }
 
-function loadNext9(){
+function loadNext(){
 	if (fotoViews.length > 0) {
 
 		thisView = fotoViews.splice(0, 1);
@@ -477,7 +477,7 @@ $( document ).ready(function() {
 	renderAll()
 	$( "#tm" ).click(function() {
 			// iterateButtons('si')
-			loadNext9();
+			loadNext();
 
 		});
 	$( "#resett" ).click(function() {
@@ -496,7 +496,13 @@ $( document ).ready(function() {
 	$( "#di" ).click(function() {
 		if (currentSelection.length < allImages.length) {
 			sortedSelection = shuffle(currentSelection);
-			fotoViews = breakup(sortedSelection);
+			if ($("#fotos").width() >= 1110) {fotoViews = breakup(sortedSelection, 15);} 
+			else if ($("#fotos").width() >= 930) {fotoViews = breakup(sortedSelection, 12);} 
+			else if ($("#fotos").width() >= 690) {fotoViews = breakup(sortedSelection, 9);} 
+			else if ($("#fotos").width() >= 410) {fotoViews = breakup(sortedSelection, 6);} 
+			else if ($("#fotos").width() >= 100) {fotoViews = breakup(sortedSelection, 4);} 
+			else {fotoViews = breakup(sortedSelection, 10);} 
+			// console.log($("#innerFotos").width());
 			$( "div#fotos" ).html('<div class="row display-flex" id="innerFotos"></div>');
 			if (fotoViews.length > 0) {
 				thisView = fotoViews.splice(0, 1);
