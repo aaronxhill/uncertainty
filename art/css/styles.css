@@ -152,7 +152,8 @@ a.disabled {
 }
 
 img {
-    max-width: 360px;
+    /*max-width: 360px;*/
+    max-width: 150%;
     height: auto;
     /*padding-top: 25px;*/
     /*padding-right: 25px;*/
