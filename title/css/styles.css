@@ -3,3 +3,15 @@
   stroke: steelblue;
   stroke-width: 1px;
 }
+
+#ff {
+  width: 1280px;
+  height: 720px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -100px 0 0 -555px;
+}
