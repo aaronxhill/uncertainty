@@ -1,0 +1,39 @@
+#d3Here {
+ z-index: 0;
+}
+
+/*#d3loc {
+	margin: auto;
+    width: 50%;
+}*/
+
+#overD3 {
+  z-index: 1;
+}
+
+#iGrid {
+  padding: 20px;
+}
+
+.myfoto {
+	padding-top: 10px; 
+	/*max-width: 300px; */
+}
+
+#calc {
+	max-width: 100%; 
+}
+
+.research-img {
+	max-width: 100%; 
+}
+
+.hoverr {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+.hoverr:hover {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
