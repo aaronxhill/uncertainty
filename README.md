@@ -5,7 +5,7 @@
 Any time that data is used to better understand the world--for any reason, from any source--there exists the possibility of error. The 2016 Brexit vote and November 2016 U.S. election are powerful examples of troves of data pointing to the wrong outcome. Data is inherently uncertain, and to some extent every estimate is vulnerable. But the visual display of uncertainty and sources of error is difficult, which mostly results in neglecting to communicate this vulnerability. 
 
 This work (in progress) is to adopt and extend an existing visual language for the explicit purpose of visual expression of uncertainty and error. The system proposed by Jacques Bertin in his 1967 book *Semiology of Graphics* is adopted with minor adaptations as the basis for communication of graphical elements and their placements in the planar system. Bertin identifies six visual variables in the planar dimensions: size, value, texture, color, orientation, and shape. There are three types of signification--point, line, and area--that are the elementary figures of geography. Example variations on the visual variables by type of signification are illustrated by Bertin:
-![Bertin, 19xx](https://github.com/aaronxhill/uncertainty/raw/master/bertin/bertin.png)
+![Bertin, 19xx](https://github.com/aaronxhill/uncertainty/raw/master/public/bertin/bertin.png)
 
 The full corpus of work can be viewed at [www.visualizeuncertainty.io](http://www.visualizeuncertainty.io/).
 
