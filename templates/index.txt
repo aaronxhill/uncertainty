@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- My CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- My JS -->
-    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
 
     <title>Visualize Uncertainty</title>
   </head>
@@ -70,13 +70,13 @@
     <hr>
 
     <div class="row">
-      <h2>Research and Practice</h2>
+      <h2 class="mb-4">Research and Practice</h2>
     </div>
 
     <div class="row">
 
       <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-      <h3>VISAP paper</h3>
+      <h4>VISAP paper</h4>
       <div class="row">
       <div class="col-12 col-md-8">
       <p>Maecenas tincidunt libero sit amet ex vestibulum, eget malesuada mi porta. Cras quis felis hendrerit, pellentesque justo eget, rutrum velit. Fusce a nisl turpis. Fusce sit amet dolor sed tellus convallis consectetur. Donec iaculis risus vitae lobortis molestie. Nullam tempor ornare porttitor. Donec id erat non massa efficitur viverra. </p>
@@ -89,7 +89,7 @@
       </div>
 
       <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-      <h3>Identity code</h3>
+      <h4>Identity code</h4>
       <div class="row">
       <div class="col-12 col-md-8">
       <p>Maecenas tincidunt libero sit amet ex vestibulum, eget malesuada mi porta. Cras quis felis hendrerit, pellentesque justo eget, rutrum velit. Fusce a nisl turpis. Fusce sit amet dolor sed tellus convallis consectetur. Donec iaculis risus vitae lobortis molestie. Nullam tempor ornare porttitor. Donec id erat non massa efficitur viverra. </p>
@@ -102,7 +102,7 @@
       </div>
 
       <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-      <h3>Bibliography</h3>
+      <h4>Bibliography</h4>
       <div class="row">
       <div class="col-12 col-md-8">
       <p>Maecenas tincidunt libero sit amet ex vestibulum, eget malesuada mi porta. Cras quis felis hendrerit, pellentesque justo eget, rutrum velit. Fusce a nisl turpis. Fusce sit amet dolor sed tellus convallis consectetur. Donec iaculis risus vitae lobortis molestie. Nullam tempor ornare porttitor. Donec id erat non massa efficitur viverra. </p>
@@ -115,7 +115,7 @@
       </div>
 
       <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-      <h3>Course: Visualizing Uncertainty</h3>
+      <h4>Course: Visualizing Uncertainty</h4>
       <div class="row">
       <div class="col-12 col-md-8">
       <p>Maecenas tincidunt libero sit amet ex vestibulum, eget malesuada mi porta. Cras quis felis hendrerit, pellentesque justo eget, rutrum velit. Fusce a nisl turpis. Fusce sit amet dolor sed tellus convallis consectetur. Donec iaculis risus vitae lobortis molestie. Nullam tempor ornare porttitor. Donec id erat non massa efficitur viverra. </p>
