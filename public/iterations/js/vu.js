@@ -9,56 +9,64 @@ var pz0 = d3.select("#pz0")
     .append("svg")
         .attr("width", width)
         .attr("height", height)
-        // MAKE RESPONSIVE: 
-        // .attr("preserveAspectRatio", "xMinYMin meet")
-        // .attr("viewBox", "0 0 1024 256")
+	.style("outline", "thin solid black")
         ;
 
 var pz1 = d3.select("#pz1")
     .append("svg")
         .attr("width", width)
         .attr("height", height)
-        // MAKE RESPONSIVE: 
-        // .attr("preserveAspectRatio", "xMinYMin meet")
-        // .attr("viewBox", "0 0 1024 256")
+	.style("outline", "thin solid black")
         ;
 
 var lz0 = d3.select("#lz0")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
+	.style("outline", "thin solid black")
 	;
 
 var lz1 = d3.select("#lz1")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
+	.style("outline", "thin solid black")
 	;
 
 var az0 = d3.select("#az0")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
+	.style("outline", "thin solid black")
 	;
 
-// var projection = d3.geoEquirectangular()
-// 	.translate[width/2, height/2]
-// 	// .center([0, 15])
-// 	// .scale([1500])
-// 	;
+var az1 = d3.select("#az1")
+	.append("svg")
+	.attr("width", width)
+	.attr("height", height)
+	.style("outline", "thin solid black")
+	;
 
-var projection = d3
-   .geoEquirectangular()
-   // .center([40.416775, -3.703790]) // set centre to further North
-   .scale([175])
-   // .scale([width/(2*Math.PI)]) // scale to fit group width
-   .translate([width/2,height/2]) // ensure centred in group
+// http://bl.ocks.org/peterlozano/3a4578f64ec9630cfefe
+var projection = d3.geoMercator()
+   .center([-3, 40]) 
+   .scale([1300])
+   .translate([width/2,height/2]) 
 ;
 
 var mapPath = d3.geoPath()
 	.projection(projection)
-	// .bounds([[44.318936, 2.461475],[35.152898, -10.298987]])
-	// .bounds([[44.318936, -10.298987],[35.152898, 2.461475]])
+	;
+
+// map zoom
+var projectionz = d3.geoMercator()
+   .center([-8.1, 43.6]) 
+   .scale([33000])
+   .translate([width/2,height/2]) 
+;
+
+var mapPathz = d3.geoPath()
+	.projection(projectionz)
 	;
 
 var rowConverter = function (d) {
@@ -68,13 +76,23 @@ var rowConverter = function (d) {
 	}
 }
 
-d3.json("data/spain.json", function(json) {
+d3.json("data/esp.json", function(es) {
+
+	var subunits = topojson.feature(es, es.objects.subunits);
 	
 	az0.selectAll("path")
-		.data(json.features)
+		.data(subunits.features)
 		.enter()
 		.append("path")
 		.attr("d", mapPath)
+		.attr("stroke", "black")
+		;
+
+	az1.selectAll("path")
+		.data(subunits.features)
+		.enter()
+		.append("path")
+		.attr("d", mapPathz)
 		.attr("stroke", "black")
 		;
 })
