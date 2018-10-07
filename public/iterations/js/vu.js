@@ -47,6 +47,34 @@ var az1 = d3.select("#az1")
 	.style("outline", "thin solid black")
 	;
 
+var gz0 = d3.select("#gz0")
+	.append("svg")
+	.attr("width", width)
+	.attr("height", height)
+	// .append("g")
+	// .attr("transform", "translate(300, 300)")
+	.style("outline", "thin solid black")
+	;
+
+gz0.selectAll("rect")
+	.data([175])
+	.enter()
+	.append("rect")
+	.attr("x", 100)
+	.attr("y", 0)
+	.attr("width", 100)
+	.attr("height", function(d) {
+		return d;
+	})
+	;	
+
+var gz1 = d3.select("#gz1")
+	.append("svg")
+	.attr("width", width)
+	.attr("height", height)
+	.style("outline", "thin solid black")
+	;
+
 // http://bl.ocks.org/peterlozano/3a4578f64ec9630cfefe
 var projection = d3.geoMercator()
    .center([-3, 40]) 
