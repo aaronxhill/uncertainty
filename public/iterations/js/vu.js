@@ -1,4 +1,5 @@
-
+// TODO: 
+// Need to scale Z1 so the effect is also zoomed
 
 var width = 300;
 var height = 300;
@@ -70,6 +71,7 @@ gz0.selectAll("rect")
    .attr("height", function(d) {
    		return d;
    })
+   // .attr("fill", "yellow")
    ;	
 
 gz0.append("rect")
@@ -104,6 +106,27 @@ gz1.selectAll("rect")
    		return d;
    })
    ;
+
+function extendGattr (attrK, attrV){
+	gz0.attr(attrK, attrV); 
+	gz1.attr(attrK, attrV); 
+	}
+
+extendGattr(["fill", "black"])
+// gz0.attr("fill", "yellow")
+
+function extendAattr (attr, styl){
+	if (attr) {
+		az0.attr(attr[0], attr[1]); 
+		az1.attr(attr[0], attr[1]); 
+	}
+	if (styl) {
+		az0.style(styl[0], styl[1]); 
+		az1.style(styl[0], styl[1]); 
+	}
+}
+
+extendAattr(["fill", "black"], null)
 
 // http://bl.ocks.org/peterlozano/3a4578f64ec9630cfefe
 var projection = d3.geoMercator()
@@ -143,7 +166,7 @@ d3.json("data/esp.json", function(es) {
 		.enter()
 		.append("path")
 		.attr("d", mapPath)
-		.attr("stroke", "black")
+		// .attr("stroke", "black")
 		;
 
 	az1.selectAll("path")
@@ -151,7 +174,7 @@ d3.json("data/esp.json", function(es) {
 		.enter()
 		.append("path")
 		.attr("d", mapPathz)
-		.attr("stroke", "black")
+		// .attr("stroke", "black")
 		;
 
 	 az0.append("rect")
