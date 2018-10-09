@@ -6,6 +6,7 @@ var width = 300;
 var height = 300;
 var radius = 3.5; 
 var padding = 10; 
+var svgOutline = "thin solid #d3d3d3";
 
 // ************************************ //
 // ******** P, L, A(2) CLASSES ******** //
@@ -17,14 +18,14 @@ var pz0 = d3.select("#pz0")
     .append("svg")
     .attr("width", width)
     .attr("height", height)
-	.style("outline", "thin solid black")
+	.style("outline", svgOutline)
     ;
 
 var pz1 = d3.select("#pz1")
     .append("svg")
     .attr("width", width)
     .attr("height", height)
-	.style("outline", "thin solid black")
+	.style("outline", svgOutline)
     ;
 
 d3.csv("data/oldfaithful.csv", function(data) {
@@ -101,14 +102,14 @@ var lz0 = d3.select("#lz0")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
-	.style("outline", "thin solid black")
+	.style("outline", svgOutline)
 	;
 
 var lz1 = d3.select("#lz1")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
-	.style("outline", "thin solid black")
+	.style("outline", svgOutline)
 	;
 
 var rowConverter = function (d) {
@@ -234,14 +235,14 @@ var az0 = d3.select("#az0")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
-	.style("outline", "thin solid black")
+	.style("outline", svgOutline)
 	;
 
 var az1 = d3.select("#az1")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
-	.style("outline", "thin solid black")
+	.style("outline", svgOutline)
 	;
 
 function extendAattr (attr, styl){
@@ -314,7 +315,7 @@ var gz0 = d3.select("#gz0")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
-	.style("outline", "thin solid black")
+	.style("outline", svgOutline)
 	;
 
 gz0.selectAll("rect")
@@ -347,7 +348,7 @@ var gz1 = d3.select("#gz1")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
-	.style("outline", "thin solid black")
+	.style("outline", svgOutline)
 	;
 
 gz1.selectAll("rect")
