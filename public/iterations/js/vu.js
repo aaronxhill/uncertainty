@@ -57,16 +57,30 @@ var gz0 = d3.select("#gz0")
 	;
 
 gz0.selectAll("rect")
-	.data([175])
-	.enter()
-	.append("rect")
-	.attr("x", 100)
-	.attr("y", 0)
-	.attr("width", 100)
-	.attr("height", function(d) {
-		return d;
-	})
-	;	
+   .data([100, 150, 225])
+   .enter()
+   .append("rect")
+   .attr("x", function(d, i) {
+   		return i * (width / 3 + 15);
+   })
+   .attr("y", function(d) {
+   		return height - (d);
+   })
+   .attr("width", width / 3 - 30)
+   .attr("height", function(d) {
+   		return d;
+   })
+   ;	
+
+gz0.append("rect")
+   .attr("x", 225)
+   .attr("y", 70)
+   .attr("width", 15)
+   .attr("height", 15)
+   .attr("fill", "none")
+   .attr("stroke-width", "1")
+   .attr("stroke", "red")
+   ;
 
 var gz1 = d3.select("#gz1")
 	.append("svg")
@@ -74,6 +88,22 @@ var gz1 = d3.select("#gz1")
 	.attr("height", height)
 	.style("outline", "thin solid black")
 	;
+
+gz1.selectAll("rect")
+   .data([225])
+   .enter()
+   .append("rect")
+   .attr("x", function(d, i) {
+   		return width / 3;
+   })
+   .attr("y", function(d) {
+   		return height - (d);
+   })
+   .attr("width", width )
+   .attr("height", function(d) {
+   		return d;
+   })
+   ;
 
 // http://bl.ocks.org/peterlozano/3a4578f64ec9630cfefe
 var projection = d3.geoMercator()
@@ -123,6 +153,16 @@ d3.json("data/esp.json", function(es) {
 		.attr("d", mapPathz)
 		.attr("stroke", "black")
 		;
+
+	 az0.append("rect")
+       .attr("x", 11)
+       .attr("y", 47)
+       .attr("width", 8)
+       .attr("height", 8)
+       .attr("fill", "none")
+       .attr("stroke-width", "1")
+       .attr("stroke", "red")
+       ;
 })
 
 d3.csv("data/yahoosnp500.csv", rowConverter, function(data) {
