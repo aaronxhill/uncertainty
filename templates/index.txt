@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
 
@@ -49,18 +49,18 @@
             <p>Ut dolor erat, porttitor et egestas eget, rutrum vitae nisl. Proin a sagittis erat. Vestibulum varius sapien nec commodo ullamcorper. Pellentesque dictum augue sed odio vestibulum rhoncus. Duis ultricies ac metus et viverra. Ut at diam id massa eleifend elementum. Curabitur metus lorem, semper nec elit sed, imperdiet porttitor odio. Vestibulum nec venenatis ante. Praesent dapibus suscipit eros, quis consectetur mauris commodo id. Etiam sodales lacus sit amet justo commodo, in molestie libero vulputate. Morbi pharetra metus turpis, ornare placerat mauris cursus quis. Sed eu nisi id purus sodales malesuada. Sed mollis urna posuere, condimentum magna in, rutrum est.</p>
           </div>
           <!-- <div id="randomArt"> -->
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4"><img src="img_cropped/{{fotos.[0]}}.jpg" class="img-fluid hoverr mb-3" id="fotoOne"></div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4"><img src="img_cropped/{{fotos.[1]}}.jpg" class="img-fluid hoverr" id="fotoTwo"></div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-none d-lg-block"><img src="img_cropped/{{fotos.[2]}}.jpg" class="img-fluid hoverr" id="fotoThree"></div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-none d-lg-block"><img src="img_cropped/{{fotos.[3]}}.jpg" class="img-fluid hoverr" id="fotoFour"></div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-none d-lg-block"><img src="img_cropped/{{fotos.[4]}}.jpg" class="img-fluid hoverr" id="fotoFive"></div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-none d-lg-block"><img src="img_cropped/{{fotos.[5]}}.jpg" class="img-fluid hoverr" id="fotoSix"></div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4"><img src="../img_cropped/{{fotos.[0]}}.jpg" class="img-fluid hoverr mb-3" id="fotoOne"></div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4"><img src="../img_cropped/{{fotos.[1]}}.jpg" class="img-fluid hoverr" id="fotoTwo"></div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-none d-lg-block"><img src="../img_cropped/{{fotos.[2]}}.jpg" class="img-fluid hoverr" id="fotoThree"></div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-none d-lg-block"><img src="../img_cropped/{{fotos.[3]}}.jpg" class="img-fluid hoverr" id="fotoFour"></div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-none d-lg-block"><img src="../img_cropped/{{fotos.[4]}}.jpg" class="img-fluid hoverr" id="fotoFive"></div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-none d-lg-block"><img src="../img_cropped/{{fotos.[5]}}.jpg" class="img-fluid hoverr" id="fotoSix"></div>
           <!-- </div> -->
         </div>
       </div>
 
       <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
-        <img src="img_assets/calc.jpeg" id="calc">
+        <img src="../img_assets/calc.jpeg" id="calc">
       </div>
       <div class="col-12 d-block d-md-none">
       <button type="button" class="btn btn-primary">Show Calculator</button>
@@ -82,7 +82,7 @@
       <p>Maecenas tincidunt libero sit amet ex vestibulum, eget malesuada mi porta. Cras quis felis hendrerit, pellentesque justo eget, rutrum velit. Fusce a nisl turpis. Fusce sit amet dolor sed tellus convallis consectetur. Donec iaculis risus vitae lobortis molestie. Nullam tempor ornare porttitor. Donec id erat non massa efficitur viverra. </p>
       </div>
       <div class="col-12 col-md-4">
-      <img src="img_cropped/288.jpg" class="research-img">
+      <img src="../img_cropped/288.jpg" class="research-img">
       </div>
       </div>
       <hr>
@@ -95,7 +95,7 @@
       <p>Maecenas tincidunt libero sit amet ex vestibulum, eget malesuada mi porta. Cras quis felis hendrerit, pellentesque justo eget, rutrum velit. Fusce a nisl turpis. Fusce sit amet dolor sed tellus convallis consectetur. Donec iaculis risus vitae lobortis molestie. Nullam tempor ornare porttitor. Donec id erat non massa efficitur viverra. </p>
       </div>
       <div class="col-12 col-md-4">
-      <img src="img_cropped/241.jpg" class="research-img">
+      <img src="../img_cropped/241.jpg" class="research-img">
       </div>
       </div>
       <hr>
@@ -108,7 +108,7 @@
       <p>Maecenas tincidunt libero sit amet ex vestibulum, eget malesuada mi porta. Cras quis felis hendrerit, pellentesque justo eget, rutrum velit. Fusce a nisl turpis. Fusce sit amet dolor sed tellus convallis consectetur. Donec iaculis risus vitae lobortis molestie. Nullam tempor ornare porttitor. Donec id erat non massa efficitur viverra. </p>
       </div>
       <div class="col-12 col-md-4">
-      <img src="img_cropped/388.jpg" class="research-img">
+      <img src="../img_cropped/388.jpg" class="research-img">
       </div>
       </div>
       <hr>
@@ -121,7 +121,7 @@
       <p>Maecenas tincidunt libero sit amet ex vestibulum, eget malesuada mi porta. Cras quis felis hendrerit, pellentesque justo eget, rutrum velit. Fusce a nisl turpis. Fusce sit amet dolor sed tellus convallis consectetur. Donec iaculis risus vitae lobortis molestie. Nullam tempor ornare porttitor. Donec id erat non massa efficitur viverra. </p>
       </div>
       <div class="col-12 col-md-4">
-      <img src="img_cropped/218.jpg" class="research-img">
+      <img src="../img_cropped/218.jpg" class="research-img">
       </div>
       </div>
       <hr>
@@ -134,15 +134,15 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="title/js/d3.min.js"></script>
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../title/js/d3.min.js"></script>
     <!-- // <script src="title/js/vu_area_letters.js"></script>  -->
     <!-- // <script src="title/js/vu.js"></script>  -->
-    <script src="title/js/{{d3script}}.js"></script>
+    <script src="../title/js/{{d3script}}.js"></script>
     <div id='identityScript'></div>
-    <script src="js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>
 

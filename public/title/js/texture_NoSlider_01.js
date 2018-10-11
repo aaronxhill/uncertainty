@@ -15,10 +15,13 @@
 
 
 			//Create SVG element
-			var svg = d3.select("d3Here")
+			var svg = d3.select("#d3Here")
 						.append("svg")
-						.attr("width", w)
-						.attr("height", h);
+						// .attr("width", w)
+						// .attr("height", h)
+						        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 1024 256")
+        ;
 
 			//Append group to hold blurred dots
 			var blurGroup = svg.append("g")
