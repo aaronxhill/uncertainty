@@ -6,11 +6,11 @@
 
 
 			//Width and height ()
-			var w = window.innerWidth;
-			var h = w/4;
+			var w = 1024;
+			var h = 256;
 
       //Margins
-			var marginSize = .15;
+			var marginSize = 0;
 			var wMargin = w*marginSize;
 			var hMargin = h*marginSize;
 

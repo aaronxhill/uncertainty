@@ -1,6 +1,6 @@
 			//Width and height ()
-			var w = window.innerWidth;
-			var h = w/4;
+			var w = 1024;
+			var h = 256;
 			//Resolution
 			var res = w*h;
 

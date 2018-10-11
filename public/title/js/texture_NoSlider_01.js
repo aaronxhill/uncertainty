@@ -1,11 +1,13 @@
 			//Width and height ()
-			var w = window.innerWidth;
-			var h = w/4;
+			// var w = window.innerWidth;
+			// var h = w/4;
+			var w = 1024; 
+			var h = 256; 
 			//Resolution
 			var res = w*h;
 
 			//Margins
-			var marginSize = .15;
+			var marginSize = 0.05;
 			var wMargin = w*marginSize;
 			var hMargin = h*marginSize;
 
@@ -58,7 +60,7 @@
 				.attr("cy", function(d) {
 					 return yScale(d[1]);
 				})
-				.attr("r", wMargin/200)
+				.attr("r", w * 0.15 /200)
 				.attr("clip-path", "url(#ellipse-clip)");
 
 
@@ -72,7 +74,7 @@
 					.attr("cy", function(d) {
 						 return yScale(d[1]);
 					})
-					.attr("r", wMargin/100);
+					.attr("r", w * 0.15 /100);
 
 
 					//Defining the clipping path that reveals the sharp dots underneath the blur
@@ -80,9 +82,9 @@
 						.attr("id", "ellipse-clip") // give the clipPath an ID
 					.append("circle")          // shape it as an ellipse
 						.attr("id", "circle-clip")
-						.attr("cx", 175)         // position the x-centre
-						.attr("cy", 100)         // position the y-centre
-						.attr("r", hMargin);
+						.attr("cx", 1)         // position the x-centre
+						.attr("cy", 1)         // position the y-centre
+						.attr("r", h * 0.15);
 
 
 					// This attaches the clipping Mask to the mouse cursor
