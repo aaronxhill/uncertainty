@@ -8,7 +8,10 @@ var treats = ['vu_area_letters',
               'vu', 
               'vu_point_area', 
               'vu_line_v1',
-              'vu_line_v2'];
+              'vu_line_v2',
+              'shape_01',
+              'texture_NoSlider_01'
+              ];
 
 const indexSource = fs.readFileSync("templates/index.txt").toString();
 
@@ -46,7 +49,7 @@ function getSixFotos () {
     }
     if (holder.length >= 6) {
       obj.fotos = holder; 
-      obj.d3script = treats[getRandomIntInclusive(0, 5)]
+      obj.d3script = treats[getRandomIntInclusive(0, treats.length - 1)]
       return obj; 
     }
   }

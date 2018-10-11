@@ -10,9 +10,12 @@ function getTitle () {
               "title/js/vu.js", 
               "title/js/vu_point_area.js", 
               "title/js/vu_line_v1.js",
-              "title/js/vu_line_v2.js"];
+              "title/js/vu_line_v2.js",
+              "title/js/shape_01.js",
+              "title/js/texture_NoSlider_01.js"
+              ];
 
-	var thisTitle = treats[getRandomIntInclusive(0, 5)];
+	var thisTitle = treats[getRandomIntInclusive(0, treats.length - 1)];
 	return thisTitle; 
 }
 
