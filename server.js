@@ -10,7 +10,8 @@ var treats = ['vu_area_letters',
               'vu_line_v1',
               'vu_line_v2',
               'shape_01',
-              'texture_NoSlider_01'
+              'texture_NoSlider_01',
+              'position_Wiggle_01'
               ];
 
 const indexSource = fs.readFileSync("templates/index.txt").toString();

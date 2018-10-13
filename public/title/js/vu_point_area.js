@@ -26,7 +26,7 @@ var selections5 = [du5, dn5, dc5, de5, dei5, dr5, dt5, da5, dai5, di5, did5, dnn
 var selections3 = [du3, dn3, dc3, de3, dei3, dr3, dt3, da3, dai3, di3, did3, dnn3, dtt3, dy3];
 var selections1 = [du, dn, dc, de, dei, dr, dt, da, dai, di, did, dnn, dtt, dy];
 
-var movementFactor = 1;
+var movementFactor = 10;
 var decreasing = true; 
 
 
@@ -61,14 +61,14 @@ var line5 = d3.line()
 	// .curve(d3.curveCatmullRomOpen)
     // .x(function(d) { return d[0];})
     // .y(function(d) { return d[1]; });
-    .x(function(d) { return d[0] + randn_bm() * 5; })
-    .y(function(d) { return d[1] + randn_bm() * 5; });
+    .x(function(d) { return d[0] + randn_bm() * 15; })
+    .y(function(d) { return d[1] + randn_bm() * 15; });
 
 var line3 = d3.line()
   .curve(d3.curveStep)
   .curve(d3.curveBasis)
-    .x(function(d) { return d[0] + randn_bm() * 3; })
-    .y(function(d) { return d[1] + randn_bm() * 3; });
+    .x(function(d) { return d[0] + randn_bm() * 9; })
+    .y(function(d) { return d[1] + randn_bm() * 9; });
 
 var line = d3.line()
   .curve(d3.curveStep)
