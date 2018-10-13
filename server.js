@@ -18,7 +18,7 @@ const indexSource = fs.readFileSync("templates/index.txt").toString();
 
 const template = handlebars.compile(indexSource, { strict: true });
 
-app.get('/test', function(req, res){
+app.get('/', function(req, res){
     res.writeHead(200, {'content-type': 'text/html'});
     res.end(template(getSixFotos()));
 }); 
@@ -40,18 +40,8 @@ function getRandomIntInclusive(min, max) {
 }
 
 function getSixFotos () {
-  var holder = [];
   var obj = {};
-
-  while (holder.length < 6) {
-    var thisFoto = getRandomIntInclusive(2, 405)
-    if (! holder.includes(thisFoto)) {
-      holder.push(thisFoto)
-    }
-    if (holder.length >= 6) {
-      obj.fotos = holder; 
-      obj.d3script = treats[getRandomIntInclusive(0, treats.length - 1)]
+  obj.d3script = treats[getRandomIntInclusive(0, treats.length - 1)]
       return obj; 
-    }
-  }
+
 }
