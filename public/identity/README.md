@@ -62,3 +62,11 @@ The first six visual variables listed require no further explanation. The final 
 * *Quality* is a combination of completeness, reliability, and validity.  
 * *Integrity* is the presence of information that allows a judge to establish quality. This usually involves an audit trail or lineage for a set of measurements and the context in which they were made.  
 
+## Sources of inspiration
+
+* This [design research tool](https://www.uncertainty.io/art/)
+* [https://vimeo.com/144015646](https://vimeo.com/144015646)  
+* [https://www.pinterest.com/aaronxhill/generative-type/]  (https://www.pinterest.com/aaronxhill/generative-type/)  
+
+![](http://www.azquotes.com/public/pictures/authors/39/5b/395b9a8caf7212ed9a0777ebc85f7fc8/54e7dcc0dc35f_jacques_bertin.jpg)  
+[Jacques](https://medium.com/@karlsluis/before-tufte-there-was-bertin-63af71ceaa62)
