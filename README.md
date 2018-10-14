@@ -26,5 +26,6 @@ A design research tool that complements a paper accepted at [2018 IEEE VIS](http
 ## Bertin's properties of the graphic system
 
 The visual language I use as the basis for articulation of graphical elements and their placements in the planar system is an adaptation of the [system proposed by Jacques Bertin](https://infovis-wiki.net/wiki/Visual_Variables#Jaques_Bertin) in his 1967 book *[Semiology of Graphics](https://esripress.esri.com/display/index.cfm?fuseaction=display&websiteID=190)*. Bertin identifies six visual variables in the planar dimensions: size, value, texture, color, orientation, and shape. There are three types of signification--point, line, and area--that are the elementary figures of geography. Example variations on the visual variables by type of signification are illustrated in Bertin's book:
-![Bertin, 19xx](https://github.com/aaronxhill/uncertainty/raw/master/public/bertin/bertin.png)
+
+![](https://github.com/aaronxhill/uncertainty/raw/master/public/bertin/bertin.png)
 
