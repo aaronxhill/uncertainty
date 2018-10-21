@@ -40,7 +40,8 @@ var svg = d3.select("#d3Here")
         .attr("preserveAspectRatio", "xMinYMin meet")
         .attr("viewBox", "0 0 1024 256")
 	      .on("mouseover", function(d) {
-	      	d3.selectAll("line").transition().duration(1000).ease(d3.easeQuadInOut).attr("x1", 0).attr("x2", 0).attr("y1", 0).attr("y2", 0)
+	      	// d3.selectAll("line").transition().duration(1000).ease(d3.easeQuadInOut).attr("x1", 0).attr("x2", 0).attr("y1", 0).attr("y2", 0)
+	      	d3.selectAll("line").transition().duration(2000).ease(d3.easeQuadInOut).attr("stroke", "white")
 	      })        
         ;
 
