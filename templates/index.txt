@@ -45,10 +45,10 @@
     <script src="../js/jquery-3.3.1.slim.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../title/js/d3.min.js"></script>
+    <script src="../identity/js/d3.min.js"></script>
     <!-- // <script src="title/js/vu_area_letters.js"></script>  -->
     <!-- // <script src="title/js/vu.js"></script>  -->
-    <script src="../title/js/{{d3script}}.js"></script>
+    <script src="../identity/js/{{d3script}}.js"></script>
     <div id='identityScript'></div>
     <script src="../js/scripts.js"></script>
   </body>
