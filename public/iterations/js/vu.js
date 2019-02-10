@@ -315,7 +315,12 @@ var gz0 = d3.select("#gz0")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
-	.style("outline", svgOutline)
+	// .style("outline", svgOutline)
+	   .call(d3.zoom().on("zoom", function() {
+   	gz0.attr("transform", d3.event.transform)
+   }))
+   .append("g")
+
 	;
 
 gz0.selectAll("rect")
@@ -352,7 +357,12 @@ var gz1 = d3.select("#gz1")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
-	.style("outline", svgOutline)
+	// .style("outline", svgOutline)
+	.call(d3.zoom().on("zoom", function() {
+   	gz1.attr("transform", d3.event.transform)
+   }))
+   .append("g")
+
 	;
 
 gz1.selectAll("rect")

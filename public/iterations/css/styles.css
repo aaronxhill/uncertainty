@@ -14,6 +14,10 @@ body {
   /*background-color: grey;*/
 }
 
+#gz0 svg, #gz1 svg {
+	border: solid 1px #eee;
+}
+
 /*#lz0, #lz1, #pz0, #pz1, #az0, #az1 {
   background-color: white;
 }*/
