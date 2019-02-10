@@ -332,6 +332,10 @@ gz0.selectAll("rect")
    .attr("height", function(d) {
    		return d;
    })
+   // .call(d3.zoom().on("zoom", function() {
+   // 	gz0.attr("transform", d3.event.transform)
+   // }))
+   // .append("g")
    ;	
 
 gz0.append("rect")
