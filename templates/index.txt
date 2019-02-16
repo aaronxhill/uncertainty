@@ -27,9 +27,9 @@
       </div>
 
       <div class="col-10 col-md-9 col-lg-7">
-        <p>Any time that data is used to better understand the world&mdash;for any reason, from any source&mdash;there exists the possibility of error. Every presentation of data involves transformation, reduction, and the potential for measurement error and various forms of bias. However, because the visual display of uncertainty and error is <a href="https://hbr.org/2016/11/why-its-so-hard-for-us-to-visualize-uncertainty">difficult</a>, this vulnerability is rarely graphically communicated. As the visual presentation of data takes a greater role in the communication of information, we lack effective and intuitive visual cues that communicate the degree to which an estimate could be wrong.</p>
+        <p>Any time that data is used to better understand the world&mdash;for any reason, from any source&mdash;there exists the possibility of error. Every presentation of data involves transformation, reduction, and the potential for measurement error and various forms of bias. However, because the visual display of uncertainty and error is <a href="https://hbr.org/2016/11/why-its-so-hard-for-us-to-visualize-uncertainty" target="_blank">difficult</a>, this vulnerability is rarely graphically communicated. As the visual presentation of data takes a greater role in the communication of information, we lack effective and intuitive visual cues that communicate the degree to which an estimate could be wrong.</p>
 
-        <p>This repository contributes to a growing body of work on <em>visualizing uncertainty</em>. It seeks to make <a href="/art">connections to the fine arts</a> and explore new ways to render <a href="https://github.com/aaronxhill/uncertainty">representations of uncertainty in data visualization.</a></p>
+        <p>This repository contributes to a growing body of work on <em>visualizing uncertainty</em>. It seeks to make connections to the fine arts and explore new ways to render representations of uncertainty in data visualization.</p> <p>[ <a href="/art">design research tool</a> | <a href="https://github.com/aaronxhill/uncertainty" target="_blank">repository</a> | <a href="https://www.aaronhill.io/" target="_blank">author</a> ]</p>
 
       </div>
 
