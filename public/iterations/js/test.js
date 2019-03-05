@@ -11,14 +11,23 @@ var svgOutline = "thin solid #d3d3d3";
 
 // ******** AREA: GEOMETRIC ***************************************************************************** //
 
+ var zoom = d3.zoom()
+    .scaleExtent([0, 20])
+    .on('zoom', zoomed);
+
+function zoomed() {
+	gz0.attr("transform", d3.event.transform)
+}
+
 var gz0 = d3.select("#gz0")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
 	// .style("outline", svgOutline)
-	   .call(d3.zoom().on("zoom", function() {
-   	gz0.attr("transform", d3.event.transform)
-   }))
+	// .call(zoom.on("zoom", function() {
+ //   		gz0.attr("transform", d3.event.transform)
+ //   }))
+	.call(zoom.on("zoom", zoomed))
    .append("g")
 
 	;
@@ -39,18 +48,10 @@ gz0.selectAll("rect")
    })
    ;	
 
-function zoomed() {
-	gz0.attr("transform", d3.event.transform)
-}
-
- var zoom = d3.zoom()
-    .scaleExtent([0, 20])
-    .on('zoom', zoomed);
-
 gz0.transition()
 	.duration(5000)
-	.call(zoom.transform, d3.zoomIdentity.translate(-700, -175)
-	.scale(3.5))
+	.call(zoom.transform, d3.zoomIdentity.translate(-4500, -1400)
+	.scale(20))
 	.on('end', function() {
 		gz0.transition()
 			.duration(2000)
