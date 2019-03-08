@@ -46,19 +46,24 @@ gz0.selectAll("rect")
    .attr("height", function(d) {
    		return d;
    })
+   .attr("id", "tryGrad")
    ;	
 
+// xk + tx,yk + ty
+// 6000 - 4500 = 1500, /20 = 75
+// 6000 - 1400 = 4600, /20 = 230
 gz0.transition()
 	.duration(5000)
 	.call(zoom.transform, d3.zoomIdentity.translate(-4500, -1400)
 	.scale(20))
 	.on('end', function() {
 		gz0.transition()
+			.delay(2000)
 			.duration(2000)
 			.call(zoom.transform, d3.zoomIdentity)
 	})
 
-
+// buttons: show detail, reset
 
 // gz0.call(zoom.transform, d3.zoomIdentity.translate(-700, -175).scale(3.5))
 
@@ -86,4 +91,4 @@ function extendGattr (attr, styl){
 	}
 }
 
-extendGattr(["fill", "black"], null)
+// extendGattr(["fill", "blue"], null)

@@ -18,6 +18,15 @@ body {
 	border: solid 1px #eee;
 }
 
+#tryGrad {
+	fill: red;
+	fill-opacity: 0.5;
+}
+
+/*h2 {
+	font-family: Times;
+}*/
+
 /*#lz0, #lz1, #pz0, #pz1, #az0, #az1 {
   background-color: white;
 }*/
