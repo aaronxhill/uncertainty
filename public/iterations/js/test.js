@@ -7,12 +7,13 @@ var height = 300;
 var radius = 3.5; 
 var padding = 10; 
 var svgOutline = "thin solid #d3d3d3";
+var zoomScale = 25; 
 
 
 // ******** AREA: GEOMETRIC ***************************************************************************** //
 
  var zoom = d3.zoom()
-    .scaleExtent([0, 20])
+    .scaleExtent([0, zoomScale])
     .on('zoom', zoomed);
 
 function zoomed() {
@@ -33,7 +34,7 @@ var gz0 = d3.select("#gz0")
 	;
 
 gz0.selectAll("rect")
-   .data([100, 150, 225])
+   .data([width*0.333, width*0.5, width*0.75])
    .enter()
    .append("rect")
    .attr("x", function(d, i) {
@@ -54,8 +55,8 @@ gz0.selectAll("rect")
 // 6000 - 1400 = 4600, /20 = 230
 gz0.transition()
 	.duration(5000)
-	.call(zoom.transform, d3.zoomIdentity.translate(-4500, -1400)
-	.scale(20))
+	.call(zoom.transform, d3.zoomIdentity.translate(-0.75*width*zoomScale, -0.24*width*zoomScale)
+	.scale(zoomScale))
 	.on('end', function() {
 		gz0.transition()
 			.delay(2000)
