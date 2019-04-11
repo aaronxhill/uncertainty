@@ -18,14 +18,14 @@ var pz0 = d3.select("#pz0")
     .append("svg")
     .attr("width", width)
     .attr("height", height)
-	.style("outline", svgOutline)
+	// .style("outline", svgOutline)
     ;
 
 var pz1 = d3.select("#pz1")
     .append("svg")
     .attr("width", width)
     .attr("height", height)
-	.style("outline", svgOutline)
+	// .style("outline", svgOutline)
     ;
 
 d3.csv("data/oldfaithful.csv", function(data) {
@@ -85,6 +85,11 @@ d3.csv("data/oldfaithful.csv", function(data) {
        .attr("stroke", "red")
        ;
 
+     // pz0.append("path")
+     // 	.attr("d", "m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z")
+     // 	.attr("transform", "scale(0.25) translate(1000, 1000)")
+     // 	;
+
     pz1.selectAll("circle")
       .data(dataz1)
       .enter()
@@ -102,14 +107,14 @@ var lz0 = d3.select("#lz0")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
-	.style("outline", svgOutline)
+	// .style("outline", svgOutline)
 	;
 
 var lz1 = d3.select("#lz1")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
-	.style("outline", svgOutline)
+	// .style("outline", svgOutline)
 	;
 
 var rowConverter = function (d) {
@@ -235,14 +240,14 @@ var az0 = d3.select("#az0")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
-	.style("outline", svgOutline)
+	// .style("outline", svgOutline)
 	;
 
 var az1 = d3.select("#az1")
 	.append("svg")
 	.attr("width", width)
 	.attr("height", height)
-	.style("outline", svgOutline)
+	// .style("outline", svgOutline)
 	;
 
 function extendAattr (attr, styl){
@@ -393,3 +398,51 @@ function extendGattr (attr, styl){
 }
 
 extendGattr(["fill", "black"], null)
+
+// ******** AREA: POLAR COORDINATES ***************************************************************************** //
+// SOURCE: https://github.com/alignedleft/d3-book/blob/master/chapter_13/02_doughnut.html
+
+var dataset = [ 5, 10, 20, 45, 6, 25 ];
+			var outerRadius = width / 2 - 1; // -1 for border
+			var innerRadius = width / 3;
+			var arc = d3.arc()
+						.innerRadius(innerRadius)
+						.outerRadius(outerRadius);
+			
+			var pie = d3.pie();
+			
+			//Easy colors accessible via a 10-step ordinal scale
+			var color = d3.scaleOrdinal(d3.schemeCategory10);
+			//Create SVG element
+			var plr = d3.select("#plr")
+						.append("svg")
+						.attr("width", width)
+						.attr("height", height)
+						// .style("outline", svgOutline)
+						;
+			
+			//Set up groups
+			var arcs = plr.selectAll("g.arc")
+						  .data(pie(dataset))
+						  .enter()
+						  .append("g")
+						  .attr("class", "arc")
+						  .attr("transform", "translate(" + outerRadius + "," + outerRadius + ")");
+			
+			//Draw arc paths
+			arcs.append("path")
+			    .attr("fill", function(d, i) {
+			    	// return "black";
+			    	return color(i);
+			    })
+			    .attr("d", arc);
+			
+			//Labels
+			arcs.append("text")
+			    .attr("transform", function(d) {
+			    	return "translate(" + arc.centroid(d) + ")";
+			    })
+			    .attr("text-anchor", "middle")
+			    .text(function(d) {
+			    	return d.value;
+			    });

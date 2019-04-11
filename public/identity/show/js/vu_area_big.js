@@ -19,8 +19,8 @@ var radius = 3.5;
 var opac = 0.2;
 
 // http://bl.ocks.org/d3noob/raw/11313583/
-// var colors = ["deepskyblue", "orangered", "mediumseagreen", "deeppink"]
-var colors = ["deepskyblue"]
+var colors = ["deepskyblue", "orangered", "mediumseagreen", "deeppink"]
+// var colors = ["deepskyblue"]
 var getColor = colors[getRandomIntInclusive(0, colors.length - 1)];
 var line5 = d3.line()
 	// .curve(d3.curveLinear)
@@ -48,7 +48,7 @@ var line = d3.line()
     .x(function(d) { return d[0] + randn_bm() * movementFactor; })
     .y(function(d) { return d[1] + randn_bm() * movementFactor; });
 
-var svg = d3.select("#d3Here")
+var svg = d3.select("#d3Here5")
     .append("svg")
         .attr("width", width)
         .attr("height", height);

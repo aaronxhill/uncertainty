@@ -47,7 +47,7 @@ gz0.selectAll("rect")
    .attr("height", function(d) {
    		return d;
    })
-   .attr("id", "tryGrad")
+   // .attr("id", "tryGrad")
    ;	
 
 // xk + tx,yk + ty

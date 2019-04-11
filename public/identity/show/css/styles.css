@@ -1,0 +1,16 @@
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1px;
+}
+
+.d3Show {
+	/*max-width: 360px; */
+}
+
+iframe {
+    border: 0px;
+    overflow:hidden;
+    height: 290px;
+    /*width: 1200px;*/
+}
